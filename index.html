@@ -1,840 +1,896 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Colégio CCI - Centro de Criatividade Infantojuvenil. Educação de excelência e inovação da Educação Infantil ao Ensino Médio em Samambaia - DF. Matrículas Abertas." />
-    <meta name="keywords" content="escola samambaia, colegio cci, cci samambaia, escola particular df, ensino medio pas unb, escola da inteligencia, mind lab" />
-    <link rel="icon" type="image/png" href="/logo-cci-branca.png" />
-    <title>CCI — Escola & Faculdade | Educação Premium em Samambaia - DF</title>
-    
-    <!-- Premium Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome Icons for Luxury Vibes -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    
-    <!-- Local Stylesheet -->
-    <link rel="stylesheet" href="/src/style.css" />
-  </head>
-  <body>
-    <!-- App Container -->
-    <div id="app">
-      <!-- Ambient Backlight Elements (Cinematic Ambient Glows) -->
-      <div class="ambient-glow glow-1"></div>
-      <div class="ambient-glow glow-2"></div>
-      <div class="ambient-glow glow-3"></div>
 
-      <!-- Navigation Header -->
-      <header id="main-header" class="glass-header">
-        <div class="header-container">
-          <a href="#" class="brand-logo" id="nav-logo">
-            <img src="/logo-cci-branca.png" alt="Colégio CCI" class="logo-img logo-light" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Colégio CCI - Centro de Criatividade Infantojuvenil. Educação de excelência e inovação da Educação Infantil ao Ensino Médio em Samambaia - DF. Matrículas Abertas." />
+  <meta name="keywords"
+    content="escola samambaia, colegio cci, cci samambaia, escola particular df, ensino medio pas unb, escola da inteligencia, mind lab" />
+  <link rel="icon" type="image/png" href="/logo-cci-branca.png" />
+  <title>CCI — Escola & Faculdade | Educação Premium em Samambaia - DF</title>
+
+  <!-- Premium Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons for Luxury Vibes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Local Stylesheet -->
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+  <!-- App Container -->
+  <div id="app">
+    <!-- Ambient Backlight Elements (Cinematic Ambient Glows) -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Navigation Header -->
+    <header id="main-header" class="glass-header">
+      <div class="header-container">
+        <a href="#" class="brand-logo" id="nav-logo">
+          <img src="/logo-cci-branca.png" alt="Colégio CCI" class="logo-img logo-light" />
+        </a>
+
+        <nav class="desktop-nav">
+          <a href="#inicio" class="nav-link active">Início</a>
+          <a href="#sobre" class="nav-link">Sobre</a>
+          <a href="#segmentos" class="nav-link">Segmentos</a>
+          <a href="#metodologia" class="nav-link">Metodologia</a>
+          <a href="#diferenciais" class="nav-link">Diferenciais</a>
+          <a href="#estrutura" class="nav-link">Infraestrutura</a>
+          <a href="#blog" class="nav-link">Novidades</a>
+          <a href="#eventos" class="nav-link">Eventos</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#portal" class="btn btn-header-portal">
+            <i class="fa-solid fa-user"></i>
+            <span>Portal do Aluno</span>
           </a>
-          
-          <nav class="desktop-nav">
-            <a href="#inicio" class="nav-link active">Início</a>
-            <a href="#sobre" class="nav-link">Sobre</a>
-            <a href="#segmentos" class="nav-link">Segmentos</a>
-            <a href="#metodologia" class="nav-link">Metodologia</a>
-            <a href="#diferenciais" class="nav-link">Diferenciais</a>
-            <a href="#estrutura" class="nav-link">Infraestrutura</a>
-            <a href="#blog" class="nav-link">Novidades</a>
-            <a href="#eventos" class="nav-link">Eventos</a>
-          </nav>
-          
-          <div class="header-actions">
-            <a href="#portal" class="btn btn-header-portal">
-              <i class="fa-solid fa-user"></i>
-              <span>Portal do Aluno</span>
+          <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-overlay">
+      <div class="mobile-nav-drawer">
+        <div class="mobile-nav-header">
+          <span class="logo-text">CCI <span class="logo-tag">PREMIUM</span></span>
+          <button class="mobile-menu-close" aria-label="Close Menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <nav class="mobile-nav-links">
+          <a href="#inicio" class="mobile-link">Início</a>
+          <a href="#sobre" class="mobile-link">Sobre</a>
+          <a href="#segmentos" class="mobile-link">Segmentos</a>
+          <a href="#metodologia" class="mobile-link">Metodologia</a>
+          <a href="#diferenciais" class="mobile-link">Diferenciais</a>
+          <a href="#estrutura" class="mobile-link">Infraestrutura</a>
+          <a href="#blog" class="mobile-link">Novidades</a>
+          <a href="#eventos" class="mobile-link">Eventos</a>
+          <div class="mobile-cta-group">
+            <a href="#contato" class="btn btn-header-visit btn-full text-center">Agendar Visita <i
+                class="fa-solid fa-arrow-right"></i></a>
+            <a href="#contato" class="btn btn-header-enroll btn-full text-center" style="margin-top: 10px;">Fazer
+              Matrícula <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+      <!-- Hero Section -->
+      <section id="inicio" class="hero-section">
+        <div class="hero-parallax-bg" style="background-image: url('/hero_cci.png');">
+          <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content container">
+          <div class="hero-badge animate-fade-up">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Matrículas Abertas para 2026</span>
+          </div>
+
+          <h1 class="hero-title animate-text-stagger">
+            O futuro se constrói com <span class="gradient-text-gold">Criatividade</span> & <span
+              class="text-white">Excelência.</span>
+          </h1>
+
+          <p class="hero-subtitle animate-fade-up">
+            Uma jornada educacional imersiva que conecta valores humanos fundamentais, inovação tecnológica de ponta e a
+            preparação definitiva para a vida.
+          </p>
+
+          <div class="hero-actions animate-fade-up">
+            <a href="#contato" class="btn btn-primary btn-glow">
+              <span>Agende uma Visita</span>
+              <i class="fa-solid fa-calendar-days"></i>
             </a>
-            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </button>
+            <a href="#sobre" class="btn btn-secondary">
+              <span>Conheça Nossa Proposta</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+          </div>
+
+          <div class="hero-trust-indicators animate-fade-up">
+            <div class="indicator-item">
+              <span class="indicator-number">28</span>
+              <span class="indicator-label">Anos de Tradição</span>
+            </div>
+            <div class="indicator-divider"></div>
+            <div class="indicator-item">
+              <span class="indicator-number">100%</span>
+              <span class="indicator-label">Acompanhamento</span>
+            </div>
+            <div class="indicator-divider"></div>
+            <div class="indicator-item">
+              <span class="indicator-number">1º</span>
+              <span class="indicator-label">Lugar em Samambaia</span>
+            </div>
           </div>
         </div>
-      </header>
 
-      <!-- Mobile Navigation Drawer -->
-      <div class="mobile-nav-overlay">
-        <div class="mobile-nav-drawer">
-          <div class="mobile-nav-header">
-            <span class="logo-text">CCI <span class="logo-tag">PREMIUM</span></span>
-            <button class="mobile-menu-close" aria-label="Close Menu">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-          </div>
-          <nav class="mobile-nav-links">
-            <a href="#inicio" class="mobile-link">Início</a>
-            <a href="#sobre" class="mobile-link">Sobre</a>
-            <a href="#segmentos" class="mobile-link">Segmentos</a>
-            <a href="#metodologia" class="mobile-link">Metodologia</a>
-            <a href="#diferenciais" class="mobile-link">Diferenciais</a>
-            <a href="#estrutura" class="mobile-link">Infraestrutura</a>
-            <a href="#blog" class="mobile-link">Novidades</a>
-            <a href="#eventos" class="mobile-link">Eventos</a>
-            <div class="mobile-cta-group">
-              <a href="#contato" class="btn btn-header-visit btn-full text-center">Agendar Visita <i class="fa-solid fa-arrow-right"></i></a>
-              <a href="#contato" class="btn btn-header-enroll btn-full text-center" style="margin-top: 10px;">Fazer Matrícula <i class="fa-solid fa-arrow-right"></i></a>
+        <div class="hero-scroll-indicator">
+          <span class="mouse-icon">
+            <span class="mouse-wheel"></span>
+          </span>
+          <span class="scroll-text">Deslize para Explorar</span>
+        </div>
+      </section>
+
+      <!-- About School Section -->
+      <section id="sobre" class="about-section scroll-reveal">
+        <div class="container grid-2">
+          <div class="about-visual">
+            <div class="visual-glow"></div>
+            <!-- Floating Geometric Circle (Subtle wireframe spin) -->
+            <svg class="decor-geo-circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="46" stroke="rgba(247, 181, 0, 0.3)" stroke-width="1.2" fill="none"
+                stroke-dasharray="3 4" />
+            </svg>
+            <!-- Floating UI Card: Trust Element -->
+            <div class="glass-card floating-card info-overlay-card">
+              <div class="card-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="card-info">
+                <h4 class="card-info-title">Samambaia, Brasília - DF</h4>
+                <p class="card-info-text">28 anos sendo referência em educação de excelência na região.</p>
+              </div>
             </div>
-          </nav>
+            <div class="image-frame about-aerial-frame">
+              <img src="/school_aerial.png" alt="Vista Aérea do Colégio CCI - Samambaia DF"
+                class="img-responsive image-zoom" />
+            </div>
+          </div>
+
+          <div class="about-text-content">
+            <h2 class="section-title-eyebrow">Quem Somos</h2>
+            <h3 class="section-main-title">Uma história guiada por valores humanos e inovação pedagógica</h3>
+            <p class="section-description">
+              Fundado em 1996, o **CCI (Centro de Criatividade Infantojuvenil)** nasceu com a missão de ir além do
+              ensino tradicional. Acreditamos que a educação premium se faz respeitando a individualidade de cada
+              estudante, estimulando o protagonismo, o raciocínio crítico e construindo sólidas conexões familiares.
+            </p>
+            <div class="about-pillars">
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="pillar-body">
+                  <h4 class="pillar-title">Segurança & Acolhimento</h4>
+                  <p class="pillar-text">Ambiente seguro, planejado detalhadamente para inspirar tranquilidade aos pais
+                    e liberdade criativa aos alunos.</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-brain"></i></div>
+                <div class="pillar-body">
+                  <h4 class="pillar-title">Formação Cidadã</h4>
+                  <p class="pillar-text">Princípios de solidariedade, integridade e sustentabilidade presentes em cada
+                    etapa do aprendizado.</p>
+                </div>
+              </div>
+            </div>
+            <div class="about-actions" style="margin-top: 2.5rem;">
+              <a href="institucional.html" class="btn btn-secondary btn-glow animate-fade-up">
+                <span>Conheça Nossa História & Valores</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Educational Segments Section (Estética Colégio Leonardo da Vinci) -->
+      <section id="segmentos" class="segments-section scroll-reveal">
+        <!-- Decorative Background Arc -->
+        <svg class="segments-decor-circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="48" stroke="rgba(245, 158, 11, 0.15)" stroke-width="0.8" fill="none"
+            stroke-dasharray="2 3" />
+          <circle cx="50" cy="50" r="38" stroke="rgba(245, 158, 11, 0.08)" stroke-width="0.5" fill="none"
+            stroke-dasharray="1 4" />
+        </svg>
+
+        <div class="container text-center-header" style="position: relative; z-index: 2;">
+          <h2 class="section-title-eyebrow" style="color: var(--color-primary-light);">Nossos Segmentos</h2>
+          <h3 class="section-main-title">Visando à excelência acadêmica, tratamos cada segmento com atenção especial
+          </h3>
+          <p class="section-subtitle-max">
+            Oferecemos um ecossistema completo de aprendizagem, com foco no desenvolvimento intelectual, emocional e
+            humano de cada faixa etária.
+          </p>
+        </div>
+
+        <div class="container grid-4 segments-grid">
+          <!-- Segment 1: Educação Infantil -->
+          <div class="segment-card segment-infantil">
+            <a href="#contato" class="segment-icon-top" aria-label="Acessar Educação Infantil">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+            <div class="segment-image-wrapper">
+              <img src="/infantil.JPG" alt="Educação Infantil CCI" class="segment-img" />
+            </div>
+            <div class="segment-badge-bottom">
+              <span class="segment-subtitle">Maternal ao Jardim II</span>
+              <h4 class="segment-title">EDUCAÇÃO INFANTIL</h4>
+            </div>
+          </div>
+
+          <!-- Segment 2: Ensino Fundamental I -->
+          <div class="segment-card segment-fundamental">
+            <a href="#contato" class="segment-icon-top" aria-label="Acessar Ensino Fundamental I">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+            <div class="segment-image-wrapper">
+              <img src="/structure.png" alt="Ensino Fundamental I CCI" class="segment-img" />
+            </div>
+            <div class="segment-badge-bottom">
+              <span class="segment-subtitle">1º ano ao 4º ano</span>
+              <h4 class="segment-title">ENSINO FUNDAMENTAL I</h4>
+            </div>
+          </div>
+
+          <!-- Segment 3: Ensino Fundamental II -->
+          <div class="segment-card segment-medio">
+            <a href="#contato" class="segment-icon-top" aria-label="Acessar Ensino Fundamental II">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+            <div class="segment-image-wrapper">
+              <img src="/methodology.png" alt="Ensino Fundamental II CCI" class="segment-img" />
+            </div>
+            <div class="segment-badge-bottom">
+              <span class="segment-subtitle">5º ano ao 8º ano</span>
+              <h4 class="segment-title">ENSINO FUNDAMENTAL II</h4>
+            </div>
+          </div>
+
+          <!-- Segment 4: Ensino Médio -->
+          <div class="segment-card segment-faculdade">
+            <a href="#contato" class="segment-icon-top" aria-label="Acessar Ensino Médio">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+            <div class="segment-image-wrapper">
+              <img src="/hero_bg.png" alt="Ensino Médio CCI" class="segment-img" />
+            </div>
+            <div class="segment-badge-bottom">
+              <span class="segment-subtitle">9º ano a 3ª série EM</span>
+              <h4 class="segment-title">ENSINO MÉDIO</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Methodology Section -->
+      <section id="metodologia" class="methodology-section scroll-reveal">
+        <div class="container text-center-header">
+          <h2 class="section-title-eyebrow">Metodologia CCI</h2>
+          <h3 class="section-main-title">O Desenvolvimento Pleno do Potencial de Seu Filho</h3>
+          <p class="section-subtitle-max">
+            Nossa abordagem integra harmonicamente o desenvolvimento **afetivo, cognitivo e psicomotor**, por meio de
+            metodologias ativas que preparam para o futuro de forma estimulante.
+          </p>
+        </div>
+
+        <div class="container temple-interactive-section">
+          <!-- Left Side: Tabs and Content Display -->
+          <div class="temple-navigation-panel">
+            <div class="temple-tabs">
+              <button class="temple-tab active" data-pillar="1">
+                <span class="tab-number">01</span>
+                <span class="tab-label">Cognição & Conteúdo</span>
+              </button>
+              <button class="temple-tab" data-pillar="2">
+                <span class="tab-number">02</span>
+                <span class="tab-label">Inteligência Socioemocional</span>
+              </button>
+              <button class="temple-tab" data-pillar="3">
+                <span class="tab-number">03</span>
+                <span class="tab-label">Raciocínio & Estratégia</span>
+              </button>
+              <button class="temple-tab" data-pillar="4">
+                <span class="tab-number">04</span>
+                <span class="tab-label">Robótica & Maker</span>
+              </button>
+            </div>
+
+            <!-- Content Cards -->
+            <div class="temple-content-panel">
+              <div class="temple-content-card active" id="pillar-content-1">
+                <span class="content-tag"
+                  style="background-color: rgba(99, 102, 241, 0.15); color: var(--color-faculdade);">DIFERENCIAL
+                  FACULDADE & TECH</span>
+                <h4 class="content-title">Cognição & Ensino Forte</h4>
+                <p class="content-text">Ensino de alta performance por meio de plataformas pedagógicas de excelência
+                  mundial. Unimos um currículo denso a ferramentas que auxiliam na assimilação integral do conteúdo,
+                  preparando o estudante para as aprovações mais concorridas do PAS/UnB e do país.</p>
+              </div>
+              <div class="temple-content-card" id="pillar-content-2">
+                <span class="content-tag"
+                  style="background-color: rgba(16, 185, 129, 0.15); color: var(--color-infantil);">PROGRAMA ESCOLA DA
+                  INTELIGÊNCIA</span>
+                <h4 class="content-title">Inteligência Socioemocional</h4>
+                <p class="content-text">Com a metodologia exclusiva da **Escola da Inteligência** (do Dr. Augusto Cury),
+                  trabalhamos habilidades socioemocionais como empatia, resiliência, liderança e controle da ansiedade
+                  desde a Educação Infantil até o Ensino Médio, integrando ativamente as famílias.</p>
+              </div>
+              <div class="temple-content-card" id="pillar-content-3">
+                <span class="content-tag"
+                  style="background-color: rgba(245, 158, 11, 0.15); color: var(--color-fundamental);">SISTEMA MIND
+                  LAB</span>
+                <h4 class="content-title">Raciocínio & Estratégia</h4>
+                <p class="content-text">Utilizando o consagrado método **Mind Lab**, com jogos de tabuleiro modernos e
+                  mediação profissional, desenvolvemos a tomada de decisões, planejamento estratégico, inteligência
+                  analítica e agilidade cognitiva dos estudantes em todas as esferas da vida.</p>
+              </div>
+              <div class="temple-content-card" id="pillar-content-4">
+                <span class="content-tag"
+                  style="background-color: rgba(225, 29, 72, 0.15); color: var(--color-medio);">CULTURA MAKER & DESIGN
+                  THINKING</span>
+                <h4 class="content-title">Robótica & Inovação Prática</h4>
+                <p class="content-text">Em laboratórios altamente equipados, nossos alunos aprendem programação,
+                  montagem de autômatos, internet das coisas e lógica de automação, exercitando a criatividade pura para
+                  transformar teorias complexas em soluções reais do cotidiano.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side: The 3D CSS Temple Monument -->
+          <div class="temple-3d-monument">
+            <!-- Roof / Pediment -->
+            <div class="temple-roof">
+              <div class="temple-roof-inner">
+                <span class="roof-txt"><i class="fa-solid fa-graduation-cap"></i> FORMAÇÃO DE EXCELÊNCIA PARA A
+                  VIDA</span>
+              </div>
+            </div>
+
+            <!-- Architrave / Entablature -->
+            <div class="temple-architrave">
+              <span class="architrave-txt">COGNITIVO &bull; AFETIVO &bull; PSICOMOTOR</span>
+            </div>
+
+            <!-- Columns representing 4 Pillars -->
+            <div class="temple-columns">
+              <!-- Column 1: Cognição -->
+              <div class="temple-column col-1 active" data-pillar="1" style="--col-color: var(--color-faculdade);">
+                <div class="column-cap"></div>
+                <div class="column-shaft">
+                  <span class="column-label">Cognição & Conteúdo</span>
+                  <i class="fa-solid fa-cubes-stacked col-icon"></i>
+                </div>
+                <div class="column-base"></div>
+              </div>
+
+              <!-- Column 2: Socioemocional -->
+              <div class="temple-column col-2" data-pillar="2" style="--col-color: var(--color-infantil);">
+                <div class="column-cap"></div>
+                <div class="column-shaft">
+                  <span class="column-label">Socioemocional</span>
+                  <i class="fa-solid fa-heart-pulse col-icon"></i>
+                </div>
+                <div class="column-base"></div>
+              </div>
+
+              <!-- Column 3: Raciocínio -->
+              <div class="temple-column col-3" data-pillar="3" style="--col-color: var(--color-fundamental);">
+                <div class="column-cap"></div>
+                <div class="column-shaft">
+                  <span class="column-label">Raciocínio & Games</span>
+                  <i class="fa-solid fa-puzzle-piece col-icon"></i>
+                </div>
+                <div class="column-base"></div>
+              </div>
+
+              <!-- Column 4: Robótica -->
+              <div class="temple-column col-4" data-pillar="4" style="--col-color: var(--color-medio);">
+                <div class="column-cap"></div>
+                <div class="column-shaft">
+                  <span class="column-label">Robótica & Maker</span>
+                  <i class="fa-solid fa-microchip col-icon"></i>
+                </div>
+                <div class="column-base"></div>
+              </div>
+            </div>
+
+            <!-- Foundation Base -->
+            <div class="temple-base">
+              <span class="base-txt">CCI &mdash; CENTRO DE CRIATIVIDADE INFANTOJUVENIL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Partnership Section -->
+        <div class="container partners-container">
+          <h4 class="partners-title">Nossas Parcerias Educacionais de Excelência</h4>
+          <div class="partners-logos">
+            <div class="partner-logo-item">
+              <span class="partner-badge"><i class="fa-solid fa-shield-check"></i> Sistema Positivo</span>
+            </div>
+            <div class="partner-logo-item">
+              <span class="partner-badge"><i class="fa-solid fa-brain-circuit"></i> Escola da Inteligência</span>
+            </div>
+            <div class="partner-logo-item">
+              <span class="partner-badge"><i class="fa-solid fa-chess"></i> Mind Lab</span>
+            </div>
+            <div class="partner-logo-item">
+              <span class="partner-badge"><i class="fa-solid fa-laptop-code"></i> Google for Education</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Differentials Section -->
+      <section id="diferenciais" class="differentials-section scroll-reveal">
+        <div class="container grid-2">
+          <div class="differentials-text-content">
+            <h2 class="section-title-eyebrow">Diferenciais Premium</h2>
+            <h3 class="section-main-title">Acompanhamento sob medida em cada etapa do caminho</h3>
+            <p class="section-description">
+              O CCI foi desenhado para ser o parceiro vitalício das famílias brasileiras. Oferecemos soluções
+              inteligentes de rotina e um ensino refinado focado em grandes objetivos nacionais e globais.
+            </p>
+
+            <ul class="differentials-list">
+              <li>
+                <div class="list-bullet"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="list-content">
+                  <strong>Ensino Bilíngue Integrado:</strong> Aulas diárias de inglês imersivo conectando disciplinas e
+                  preparando para a globalização.
+                </div>
+              </li>
+              <li>
+                <div class="list-bullet"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="list-content">
+                  <strong>Período Integral & Escola Ampliada:</strong> Período extra com oficinas, suporte nos deveres
+                  de casa e esportes planejados.
+                </div>
+              </li>
+              <li>
+                <div class="list-bullet"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="list-content">
+                  <strong>Foco Absoluto no PAS/UnB:</strong> Projetos focados e correções personalizadas baseadas nos
+                  critérios reais do vestibular PAS.
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="differentials-visual">
+            <div class="journey-timeline">
+              <h4 class="timeline-header-title">Sua Jornada Conosco</h4>
+              <div class="timeline-wrapper">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-step">
+                  <span class="step-dot"></span>
+                  <div class="step-content">
+                    <span class="step-tag">Educação Infantil</span>
+                    <p class="step-text">Descobrir o mundo brincando e criando.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-step">
+                  <span class="step-dot"></span>
+                  <div class="step-content">
+                    <span class="step-tag">Ensino Fundamental</span>
+                    <p class="step-text">Consolidação de conceitos e raciocínio lógico.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-step active">
+                  <span class="step-dot"></span>
+                  <div class="step-content">
+                    <span class="step-tag">Ensino Médio</span>
+                    <p class="step-text">Alta performance e aprovação garantida.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-step">
+                  <span class="step-dot"></span>
+                  <div class="step-content">
+                    <span class="step-tag">Faculdade CCI</span>
+                    <p class="step-text">Liderança profissional e ensino superior.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Structure Section -->
+      <section id="estrutura" class="structure-section scroll-reveal">
+        <div class="container text-center-header">
+          <h2 class="section-title-eyebrow">Infraestrutura Imersiva</h2>
+          <h3 class="section-main-title">Espaços Planejados para Conectar Raciocínio e Lazer</h3>
+          <p class="section-subtitle-max">
+            Ambientes amplos, modernos e equipados com tecnologia educacional que impulsiona o desejo natural de
+            aprender de cada criança e jovem.
+          </p>
+        </div>
+
+        <div class="container grid-5 structure-gallery">
+          <div class="structure-card glass-card col-span-3">
+            <div class="image-overlay-text">
+              <span class="structure-tag">Lazer e Saúde</span>
+              <h4 class="structure-title">Complexo Aquático e Esportivo</h4>
+              <p class="structure-text">Piscinas aquecidas e quadras poliesportivas cobertas para o pleno
+                desenvolvimento motor dos alunos.</p>
+            </div>
+            <img src="/structure.png" alt="Piscina Colégio CCI" class="img-responsive structure-img" />
+            <!-- Cut-out Corner with Plus Button (Referência Leonardo da Vinci) -->
+            <div class="corner-cutout">
+              <div class="corner-plus-btn" style="background-color: var(--color-faculdade);">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="structure-card glass-card col-span-2">
+            <div class="image-overlay-text">
+              <span class="structure-tag">Foco & Tecnologia</span>
+              <h4 class="structure-title">Laboratório de Ciências & Robótica</h4>
+              <p class="structure-text">Bancadas de última geração para experimentos científicos e criação de autômatos.
+              </p>
+            </div>
+            <img src="/methodology.png" alt="Laboratório Colégio CCI" class="img-responsive structure-img" />
+            <!-- Cut-out Corner with Plus Button (Referência Leonardo da Vinci) -->
+            <div class="corner-cutout">
+              <div class="corner-plus-btn" style="background-color: var(--color-medio);">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container structure-features-grid">
+          <div class="feature-badge"><i class="fa-solid fa-wifi"></i> Salas Inteligentes</div>
+          <div class="feature-badge"><i class="fa-solid fa-book-open"></i> Biblioteca Expandida</div>
+          <div class="feature-badge"><i class="fa-solid fa-utensils"></i> Refeitório Monitorado</div>
+          <div class="feature-badge"><i class="fa-solid fa-tree"></i> Pátios Arborizados</div>
+          <div class="feature-badge"><i class="fa-solid fa-shield-heart"></i> Sistema de Monitoramento 24h</div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials-section scroll-reveal">
+        <div class="container testimonials-wrapper">
+          <div class="testimonial-header">
+            <h2 class="section-title-eyebrow">Depoimentos Reais</h2>
+            <h3 class="section-main-title text-white">O Orgulho de Fazer Parte da Nossa Família</h3>
+          </div>
+
+          <div class="testimonial-slider-container">
+            <div class="glass-card testimonial-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
+              <p class="testimonial-quote">
+                "Escolher o CCI para os meus dois filhos foi a melhor decisão que já tomei. A paz de espírito de saber
+                que eles estão em um ambiente seguro, aprendendo robótica e desenvolvendo inteligência socioemocional, é
+                indescritível. O colégio realmente entrega segurança e futuro."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-details">
+                  <strong class="author-name">Cláudia Vasconcelos</strong>
+                  <span class="author-meta">Mãe do Pedro (6º ano) e Mariana (3º ano)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic School Statistics Counter Section -->
+          <div class="stats-counter-grid">
+            <div class="stat-counter-card">
+              <h4 class="stat-number" data-target="28">0</h4>
+              <p class="stat-label">Anos Formando Vencedores</p>
+            </div>
+            <div class="stat-counter-card">
+              <h4 class="stat-number" data-target="2500">0</h4>
+              <p class="stat-label">Alunos Atendidos</p>
+            </div>
+            <div class="stat-counter-card">
+              <h4 class="stat-number" data-target="95">0</h4>
+              <span class="stat-suffix">%</span>
+              <p class="stat-label">De Aprovação no PAS/UnB</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- News & Blog Section -->
+      <section id="blog" class="blog-section scroll-reveal">
+        <div class="container text-center-header">
+          <h2 class="section-title-eyebrow">CCI em Ação</h2>
+          <h3 class="section-main-title">Acompanhe Nosso Cotidiano e Conquistas</h3>
+        </div>
+
+        <div class="container grid-3 blog-grid">
+          <!-- Article 1 -->
+          <article class="glass-card blog-card">
+            <div class="blog-image-wrapper">
+              <span class="blog-category">Educação Infantil</span>
+              <img src="/hero_bg.png" alt="Corrida Matemática" class="img-responsive" />
+            </div>
+            <div class="blog-body">
+              <span class="blog-date"><i class="fa-regular fa-calendar"></i> 24 de Abril de 2026</span>
+              <h4 class="blog-title"><a href="#">Corrida Matemática: adição com reserva no Infantil</a></h4>
+              <p class="blog-excerpt">Uma abordagem prática e dinâmica ensinando raciocínio matemático e noções iniciais
+                através de atividades lúdicas de alta cooperação.</p>
+              <a href="#" class="blog-read-more">Ler Artigo Completo <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="glass-card blog-card">
+            <div class="blog-image-wrapper">
+              <span class="blog-category">Ensino Médio</span>
+              <img src="/methodology.png" alt="Ciência em Ação" class="img-responsive" />
+            </div>
+            <div class="blog-body">
+              <span class="blog-date"><i class="fa-regular fa-calendar"></i> 18 de Abril de 2026</span>
+              <h4 class="blog-title"><a href="#">Ciência em ação: criatividade tecnológica que vai longe</a></h4>
+              <p class="blog-excerpt">Estudantes do Ensino Médio desenvolvem protótipos de automação sustentável
+                utilizando plataformas de robótica e programação.</p>
+              <a href="#" class="blog-read-more">Ler Artigo Completo <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="glass-card blog-card">
+            <div class="blog-image-wrapper">
+              <span class="blog-category">Cidadania</span>
+              <img src="/testimonial_family.png" alt="Orientação e Cidadania" class="img-responsive" />
+            </div>
+            <div class="blog-body">
+              <span class="blog-date"><i class="fa-regular fa-calendar"></i> 10 de Abril de 2026</span>
+              <h4 class="blog-title"><a href="#">Diálogo, orientação socioemocional e cidadania ativa</a></h4>
+              <p class="blog-excerpt">Fóruns internos sobre empatia e inteligência emocional auxiliam os alunos na
+                expressão de sentimentos e construção de valores éticos.</p>
+              <a href="#" class="blog-read-more">Ler Artigo Completo <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Events Section -->
+      <section id="eventos" class="events-section scroll-reveal">
+        <div class="container grid-2">
+          <div class="events-text">
+            <h2 class="section-title-eyebrow">Próximos Eventos</h2>
+            <h3 class="section-main-title">Participe da vida ativa da nossa comunidade escolar</h3>
+            <p class="section-description">
+              Promovemos eventos artísticos, esportivos e culturais integrando alunos, equipe pedagógica e as famílias
+              em comemorações memoráveis.
+            </p>
+
+            <div class="app-integration-card glass-card">
+              <div class="app-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+              <div class="app-details">
+                <h4 class="app-title">Portal de Acesso CCI</h4>
+                <p class="app-text">Baixe o nosso App nas lojas para ter a agenda escolar completa na palma da mão.</p>
+                <div class="app-stores">
+                  <a href="https://play.google.com/store/apps/details?id=br.com.cosmosedu.cci.plataforma"
+                    class="store-link"><i class="fa-brands fa-google-play"></i> Google Play</a>
+                  <a href="https://apps.apple.com/br/app/cci-col%C3%A9gio-e-faculdade/id6740246700"
+                    class="store-link"><i class="fa-brands fa-apple"></i> App Store</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="events-list">
+            <!-- Event 1 -->
+            <div class="event-item glass-card">
+              <div class="event-date-box">
+                <span class="event-day">12</span>
+                <span class="event-month">JUN</span>
+              </div>
+              <div class="event-info">
+                <h4 class="event-name">Feira de Inovação & Tecnologia Maker</h4>
+                <p class="event-desc"><i class="fa-regular fa-clock"></i> 09:00 - 16:00 | Ginásio Esportivo CCI</p>
+              </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="event-item glass-card">
+              <div class="event-date-box">
+                <span class="event-day">27</span>
+                <span class="event-month">JUN</span>
+              </div>
+              <div class="event-info">
+                <h4 class="event-name">Mostra Cultural e de Valores Humanos</h4>
+                <p class="event-desc"><i class="fa-regular fa-clock"></i> 14:00 - 19:00 | Teatro de Arena</p>
+              </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="event-item glass-card">
+              <div class="event-date-box">
+                <span class="event-day">15</span>
+                <span class="event-month">AGO</span>
+              </div>
+              <div class="event-info">
+                <h4 class="event-name">Encontro de Famílias & Diálogos Emocionais</h4>
+                <p class="event-desc"><i class="fa-regular fa-clock"></i> 08:30 - 12:00 | Auditório Principal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Enrollment CTA Section (Form Visita) -->
+      <section id="contato" class="cta-section scroll-reveal">
+        <div class="container grid-2 cta-grid">
+          <div class="cta-text-content">
+            <h2 class="section-title-eyebrow text-gold">Agende uma Visita</h2>
+            <h3 class="section-main-title text-white">Construa o Futuro do Seu Filho Conosco</h3>
+            <p class="section-description text-muted">
+              Venha conhecer pessoalmente nossa proposta pedagógica diferenciada, conversar com os coordenadores e
+              descobrir cada detalhe de nossa estrutura premium em Samambaia - DF.
+            </p>
+
+            <div class="cta-contact-info">
+              <div class="info-block">
+                <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="info-body">
+                  <span class="info-tag">Telefone da Secretaria</span>
+                  <strong class="info-val">(61) 3048-8200</strong>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="info-body">
+                  <span class="info-tag">E-mail Oficial</span>
+                  <strong class="info-val">secretaria@portalcci.com.br</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-form-container">
+            <div class="glass-card cta-form-card">
+              <h4 class="form-title">Preencha e Agende sua Visita</h4>
+              <p class="form-subtitle">Retornaremos em menos de 24 horas úteis.</p>
+
+              <form id="visita-form" class="cta-form" action="#" method="POST">
+                <div class="form-group">
+                  <label for="parent-name">Nome do Responsável</label>
+                  <input type="text" id="parent-name" placeholder="Ex: Cláudia Vasconcelos" required />
+                </div>
+
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="parent-phone">Telefone / WhatsApp</label>
+                    <input type="tel" id="parent-phone" placeholder="Ex: (61) 99999-9999" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="student-grade">Série de Interesse</label>
+                    <select id="student-grade" required>
+                      <option value="" disabled selected>Selecione...</option>
+                      <option value="infantil">Educação Infantil</option>
+                      <option value="f1">Fundamental Anos Iniciais</option>
+                      <option value="f2">Fundamental Anos Finais</option>
+                      <option value="medio">Ensino Médio</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full btn-glow btn-submit">
+                  <span>Solicitar Agendamento</span>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand-col">
+          <a href="#" class="brand-logo">
+            <img src="/logo-cci-branca.png" alt="CCI Logo" class="footer-logo-img" />
+            <span class="logo-text text-white">CCI <span class="logo-tag">PREMIUM</span></span>
+          </a>
+          <p class="footer-tagline">
+            Formando mentes criativas, críticas e cidadãos prontos para transformar o mundo.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Navegação</h4>
+          <div class="footer-links">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Quem Somos</a>
+            <a href="#metodologia">Metodologia</a>
+            <a href="#diferenciais">Diferenciais</a>
+            <a href="#estrutura">Infraestrutura</a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Sistemas</h4>
+          <div class="footer-links">
+            <a href="https://www.plurall.net/">Portal Plurall</a>
+            <a href="https://classroom.google.com/">Google Classroom</a>
+            <a href="https://portalcci.com.br/">Intranet Grupo CCI</a>
+            <a href="#eventos">Agenda de Eventos</a>
+          </div>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4 class="footer-col-title">Localização & Contato</h4>
+          <p class="contact-item"><i class="fa-solid fa-location-dot"></i> QN 403, Conjunto G - Samambaia Norte,
+            Samambaia - DF, 72319-007</p>
+          <p class="contact-item"><i class="fa-solid fa-phone"></i> (61) 3048-8200</p>
+          <p class="contact-item"><i class="fa-solid fa-envelope"></i> secretaria@portalcci.com.br</p>
         </div>
       </div>
 
-      <!-- MAIN CONTENT -->
-      <main>
-        
-        <!-- Hero Section -->
-        <section id="inicio" class="hero-section">
-          <div class="hero-parallax-bg" style="background-image: url('/hero_cci.png');">
-            <div class="hero-overlay"></div>
-          </div>
-          
-          <div class="hero-content container">
-            <div class="hero-badge animate-fade-up">
-              <span class="badge-dot"></span>
-              <span class="badge-text">Matrículas Abertas para 2026</span>
-            </div>
-            
-            <h1 class="hero-title animate-text-stagger">
-              O futuro se constrói com <span class="gradient-text-gold">Criatividade</span> & <span class="text-white">Excelência.</span>
-            </h1>
-            
-            <p class="hero-subtitle animate-fade-up">
-              Uma jornada educacional imersiva que conecta valores humanos fundamentais, inovação tecnológica de ponta e a preparação definitiva para a vida.
-            </p>
-            
-            <div class="hero-actions animate-fade-up">
-              <a href="#contato" class="btn btn-primary btn-glow">
-                <span>Agende uma Visita</span>
-                <i class="fa-solid fa-calendar-days"></i>
-              </a>
-              <a href="#sobre" class="btn btn-secondary">
-                <span>Conheça Nossa Proposta</span>
-                <i class="fa-solid fa-chevron-down"></i>
-              </a>
-            </div>
-            
-            <div class="hero-trust-indicators animate-fade-up">
-              <div class="indicator-item">
-                <span class="indicator-number">28</span>
-                <span class="indicator-label">Anos de Tradição</span>
-              </div>
-              <div class="indicator-divider"></div>
-              <div class="indicator-item">
-                <span class="indicator-number">100%</span>
-                <span class="indicator-label">Acompanhamento</span>
-              </div>
-              <div class="indicator-divider"></div>
-              <div class="indicator-item">
-                <span class="indicator-number">1º</span>
-                <span class="indicator-label">Lugar em Samambaia</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="hero-scroll-indicator">
-            <span class="mouse-icon">
-              <span class="mouse-wheel"></span>
-            </span>
-            <span class="scroll-text">Deslize para Explorar</span>
-          </div>
-        </section>
-
-        <!-- About School Section -->
-        <section id="sobre" class="about-section scroll-reveal">
-          <div class="container grid-2">
-            <div class="about-visual">
-              <div class="visual-glow"></div>
-              <!-- Floating Geometric Circle (Subtle wireframe spin) -->
-              <svg class="decor-geo-circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="50" cy="50" r="46" stroke="rgba(247, 181, 0, 0.3)" stroke-width="1.2" fill="none" stroke-dasharray="3 4" />
-              </svg>
-              <!-- Floating UI Card: Trust Element -->
-              <div class="glass-card floating-card info-overlay-card">
-                <div class="card-icon">
-                  <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <div class="card-info">
-                  <h4 class="card-info-title">Samambaia, Brasília - DF</h4>
-                  <p class="card-info-text">28 anos sendo referência em educação de excelência na região.</p>
-                </div>
-              </div>
-              <div class="image-frame about-aerial-frame">
-                <img src="/school_aerial.png" alt="Vista Aérea do Colégio CCI - Samambaia DF" class="img-responsive image-zoom" />
-              </div>
-            </div>
-            
-            <div class="about-text-content">
-              <h2 class="section-title-eyebrow">Quem Somos</h2>
-              <h3 class="section-main-title">Uma história guiada por valores humanos e inovação pedagógica</h3>
-              <p class="section-description">
-                Fundado em 1996, o **CCI (Centro de Criatividade Infantojuvenil)** nasceu com a missão de ir além do ensino tradicional. Acreditamos que a educação premium se faz respeitando a individualidade de cada estudante, estimulando o protagonismo, o raciocínio crítico e construindo sólidas conexões familiares.
-              </p>
-              <div class="about-pillars">
-                <div class="pillar-item">
-                  <div class="pillar-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                  <div class="pillar-body">
-                    <h4 class="pillar-title">Segurança & Acolhimento</h4>
-                    <p class="pillar-text">Ambiente seguro, planejado detalhadamente para inspirar tranquilidade aos pais e liberdade criativa aos alunos.</p>
-                  </div>
-                </div>
-                <div class="pillar-item">
-                  <div class="pillar-icon"><i class="fa-solid fa-brain"></i></div>
-                  <div class="pillar-body">
-                    <h4 class="pillar-title">Formação Cidadã</h4>
-                    <p class="pillar-text">Princípios de solidariedade, integridade e sustentabilidade presentes em cada etapa do aprendizado.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="about-actions" style="margin-top: 2.5rem;">
-                <a href="institucional.html" class="btn btn-secondary btn-glow animate-fade-up">
-                  <span>Conheça Nossa História & Valores</span>
-                  <i class="fa-solid fa-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Educational Segments Section (Estética Colégio Leonardo da Vinci) -->
-        <section id="segmentos" class="segments-section scroll-reveal">
-          <!-- Decorative Background Arc -->
-          <svg class="segments-decor-circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="48" stroke="rgba(245, 158, 11, 0.15)" stroke-width="0.8" fill="none" stroke-dasharray="2 3" />
-            <circle cx="50" cy="50" r="38" stroke="rgba(245, 158, 11, 0.08)" stroke-width="0.5" fill="none" stroke-dasharray="1 4" />
-          </svg>
-
-          <div class="container text-center-header" style="position: relative; z-index: 2;">
-            <h2 class="section-title-eyebrow" style="color: var(--color-primary-light);">Nossos Segmentos</h2>
-            <h3 class="section-main-title">Visando à excelência acadêmica, tratamos cada segmento com atenção especial</h3>
-            <p class="section-subtitle-max">
-              Oferecemos um ecossistema completo de aprendizagem, com foco no desenvolvimento intelectual, emocional e humano de cada faixa etária.
-            </p>
-          </div>
-          
-          <div class="container grid-4 segments-grid">
-            <!-- Segment 1: Educação Infantil -->
-            <div class="segment-card segment-infantil">
-              <a href="#contato" class="segment-icon-top" aria-label="Acessar Educação Infantil">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-              <div class="segment-image-wrapper">
-                <img src="/testimonial_family.png" alt="Educação Infantil CCI" class="segment-img" />
-              </div>
-              <div class="segment-badge-bottom">
-                <span class="segment-subtitle">Maternal ao Jardim II</span>
-                <h4 class="segment-title">EDUCAÇÃO INFANTIL</h4>
-              </div>
-            </div>
-            
-            <!-- Segment 2: Ensino Fundamental I -->
-            <div class="segment-card segment-fundamental">
-              <a href="#contato" class="segment-icon-top" aria-label="Acessar Ensino Fundamental I">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-              <div class="segment-image-wrapper">
-                <img src="/structure.png" alt="Ensino Fundamental I CCI" class="segment-img" />
-              </div>
-              <div class="segment-badge-bottom">
-                <span class="segment-subtitle">1º ano ao 4º ano</span>
-                <h4 class="segment-title">ENSINO FUNDAMENTAL I</h4>
-              </div>
-            </div>
-            
-            <!-- Segment 3: Ensino Fundamental II -->
-            <div class="segment-card segment-medio">
-              <a href="#contato" class="segment-icon-top" aria-label="Acessar Ensino Fundamental II">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-              <div class="segment-image-wrapper">
-                <img src="/methodology.png" alt="Ensino Fundamental II CCI" class="segment-img" />
-              </div>
-              <div class="segment-badge-bottom">
-                <span class="segment-subtitle">5º ano ao 8º ano</span>
-                <h4 class="segment-title">ENSINO FUNDAMENTAL II</h4>
-              </div>
-            </div>
-            
-            <!-- Segment 4: Ensino Médio -->
-            <div class="segment-card segment-faculdade">
-              <a href="#contato" class="segment-icon-top" aria-label="Acessar Ensino Médio">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-              <div class="segment-image-wrapper">
-                <img src="/hero_bg.png" alt="Ensino Médio CCI" class="segment-img" />
-              </div>
-              <div class="segment-badge-bottom">
-                <span class="segment-subtitle">9º ano a 3ª série EM</span>
-                <h4 class="segment-title">ENSINO MÉDIO</h4>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Methodology Section -->
-        <section id="metodologia" class="methodology-section scroll-reveal">
-          <div class="container text-center-header">
-            <h2 class="section-title-eyebrow">Metodologia CCI</h2>
-            <h3 class="section-main-title">O Desenvolvimento Pleno do Potencial de Seu Filho</h3>
-            <p class="section-subtitle-max">
-              Nossa abordagem integra harmonicamente o desenvolvimento **afetivo, cognitivo e psicomotor**, por meio de metodologias ativas que preparam para o futuro de forma estimulante.
-            </p>
-          </div>
-          
-          <div class="container temple-interactive-section">
-            <!-- Left Side: Tabs and Content Display -->
-            <div class="temple-navigation-panel">
-              <div class="temple-tabs">
-                <button class="temple-tab active" data-pillar="1">
-                  <span class="tab-number">01</span>
-                  <span class="tab-label">Cognição & Conteúdo</span>
-                </button>
-                <button class="temple-tab" data-pillar="2">
-                  <span class="tab-number">02</span>
-                  <span class="tab-label">Inteligência Socioemocional</span>
-                </button>
-                <button class="temple-tab" data-pillar="3">
-                  <span class="tab-number">03</span>
-                  <span class="tab-label">Raciocínio & Estratégia</span>
-                </button>
-                <button class="temple-tab" data-pillar="4">
-                  <span class="tab-number">04</span>
-                  <span class="tab-label">Robótica & Maker</span>
-                </button>
-              </div>
-
-              <!-- Content Cards -->
-              <div class="temple-content-panel">
-                <div class="temple-content-card active" id="pillar-content-1">
-                  <span class="content-tag" style="background-color: rgba(99, 102, 241, 0.15); color: var(--color-faculdade);">DIFERENCIAL FACULDADE & TECH</span>
-                  <h4 class="content-title">Cognição & Ensino Forte</h4>
-                  <p class="content-text">Ensino de alta performance por meio de plataformas pedagógicas de excelência mundial. Unimos um currículo denso a ferramentas que auxiliam na assimilação integral do conteúdo, preparando o estudante para as aprovações mais concorridas do PAS/UnB e do país.</p>
-                </div>
-                <div class="temple-content-card" id="pillar-content-2">
-                  <span class="content-tag" style="background-color: rgba(16, 185, 129, 0.15); color: var(--color-infantil);">PROGRAMA ESCOLA DA INTELIGÊNCIA</span>
-                  <h4 class="content-title">Inteligência Socioemocional</h4>
-                  <p class="content-text">Com a metodologia exclusiva da **Escola da Inteligência** (do Dr. Augusto Cury), trabalhamos habilidades socioemocionais como empatia, resiliência, liderança e controle da ansiedade desde a Educação Infantil até o Ensino Médio, integrando ativamente as famílias.</p>
-                </div>
-                <div class="temple-content-card" id="pillar-content-3">
-                  <span class="content-tag" style="background-color: rgba(245, 158, 11, 0.15); color: var(--color-fundamental);">SISTEMA MIND LAB</span>
-                  <h4 class="content-title">Raciocínio & Estratégia</h4>
-                  <p class="content-text">Utilizando o consagrado método **Mind Lab**, com jogos de tabuleiro modernos e mediação profissional, desenvolvemos a tomada de decisões, planejamento estratégico, inteligência analítica e agilidade cognitiva dos estudantes em todas as esferas da vida.</p>
-                </div>
-                <div class="temple-content-card" id="pillar-content-4">
-                  <span class="content-tag" style="background-color: rgba(225, 29, 72, 0.15); color: var(--color-medio);">CULTURA MAKER & DESIGN THINKING</span>
-                  <h4 class="content-title">Robótica & Inovação Prática</h4>
-                  <p class="content-text">Em laboratórios altamente equipados, nossos alunos aprendem programação, montagem de autômatos, internet das coisas e lógica de automação, exercitando a criatividade pura para transformar teorias complexas em soluções reais do cotidiano.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Right Side: The 3D CSS Temple Monument -->
-            <div class="temple-3d-monument">
-              <!-- Roof / Pediment -->
-              <div class="temple-roof">
-                <div class="temple-roof-inner">
-                  <span class="roof-txt"><i class="fa-solid fa-graduation-cap"></i> FORMAÇÃO DE EXCELÊNCIA PARA A VIDA</span>
-                </div>
-              </div>
-
-              <!-- Architrave / Entablature -->
-              <div class="temple-architrave">
-                <span class="architrave-txt">COGNITIVO &bull; AFETIVO &bull; PSICOMOTOR</span>
-              </div>
-
-              <!-- Columns representing 4 Pillars -->
-              <div class="temple-columns">
-                <!-- Column 1: Cognição -->
-                <div class="temple-column col-1 active" data-pillar="1" style="--col-color: var(--color-faculdade);">
-                  <div class="column-cap"></div>
-                  <div class="column-shaft">
-                    <span class="column-label">Cognição & Conteúdo</span>
-                    <i class="fa-solid fa-cubes-stacked col-icon"></i>
-                  </div>
-                  <div class="column-base"></div>
-                </div>
-
-                <!-- Column 2: Socioemocional -->
-                <div class="temple-column col-2" data-pillar="2" style="--col-color: var(--color-infantil);">
-                  <div class="column-cap"></div>
-                  <div class="column-shaft">
-                    <span class="column-label">Socioemocional</span>
-                    <i class="fa-solid fa-heart-pulse col-icon"></i>
-                  </div>
-                  <div class="column-base"></div>
-                </div>
-
-                <!-- Column 3: Raciocínio -->
-                <div class="temple-column col-3" data-pillar="3" style="--col-color: var(--color-fundamental);">
-                  <div class="column-cap"></div>
-                  <div class="column-shaft">
-                    <span class="column-label">Raciocínio & Games</span>
-                    <i class="fa-solid fa-puzzle-piece col-icon"></i>
-                  </div>
-                  <div class="column-base"></div>
-                </div>
-
-                <!-- Column 4: Robótica -->
-                <div class="temple-column col-4" data-pillar="4" style="--col-color: var(--color-medio);">
-                  <div class="column-cap"></div>
-                  <div class="column-shaft">
-                    <span class="column-label">Robótica & Maker</span>
-                    <i class="fa-solid fa-microchip col-icon"></i>
-                  </div>
-                  <div class="column-base"></div>
-                </div>
-              </div>
-
-              <!-- Foundation Base -->
-              <div class="temple-base">
-                <span class="base-txt">CCI &mdash; CENTRO DE CRIATIVIDADE INFANTOJUVENIL</span>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Partnership Section -->
-          <div class="container partners-container">
-            <h4 class="partners-title">Nossas Parcerias Educacionais de Excelência</h4>
-            <div class="partners-logos">
-              <div class="partner-logo-item">
-                <span class="partner-badge"><i class="fa-solid fa-shield-check"></i> Sistema Positivo</span>
-              </div>
-              <div class="partner-logo-item">
-                <span class="partner-badge"><i class="fa-solid fa-brain-circuit"></i> Escola da Inteligência</span>
-              </div>
-              <div class="partner-logo-item">
-                <span class="partner-badge"><i class="fa-solid fa-chess"></i> Mind Lab</span>
-              </div>
-              <div class="partner-logo-item">
-                <span class="partner-badge"><i class="fa-solid fa-laptop-code"></i> Google for Education</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Differentials Section -->
-        <section id="diferenciais" class="differentials-section scroll-reveal">
-          <div class="container grid-2">
-            <div class="differentials-text-content">
-              <h2 class="section-title-eyebrow">Diferenciais Premium</h2>
-              <h3 class="section-main-title">Acompanhamento sob medida em cada etapa do caminho</h3>
-              <p class="section-description">
-                O CCI foi desenhado para ser o parceiro vitalício das famílias brasileiras. Oferecemos soluções inteligentes de rotina e um ensino refinado focado em grandes objetivos nacionais e globais.
-              </p>
-              
-              <ul class="differentials-list">
-                <li>
-                  <div class="list-bullet"><i class="fa-solid fa-circle-check"></i></div>
-                  <div class="list-content">
-                    <strong>Ensino Bilíngue Integrado:</strong> Aulas diárias de inglês imersivo conectando disciplinas e preparando para a globalização.
-                  </div>
-                </li>
-                <li>
-                  <div class="list-bullet"><i class="fa-solid fa-circle-check"></i></div>
-                  <div class="list-content">
-                    <strong>Período Integral & Escola Ampliada:</strong> Período extra com oficinas, suporte nos deveres de casa e esportes planejados.
-                  </div>
-                </li>
-                <li>
-                  <div class="list-bullet"><i class="fa-solid fa-circle-check"></i></div>
-                  <div class="list-content">
-                    <strong>Foco Absoluto no PAS/UnB:</strong> Projetos focados e correções personalizadas baseadas nos critérios reais do vestibular PAS.
-                  </div>
-                </li>
-              </ul>
-            </div>
-            
-            <div class="differentials-visual">
-              <div class="journey-timeline">
-                <h4 class="timeline-header-title">Sua Jornada Conosco</h4>
-                <div class="timeline-wrapper">
-                  <div class="timeline-line"></div>
-                  
-                  <div class="timeline-step">
-                    <span class="step-dot"></span>
-                    <div class="step-content">
-                      <span class="step-tag">Educação Infantil</span>
-                      <p class="step-text">Descobrir o mundo brincando e criando.</p>
-                    </div>
-                  </div>
-                  
-                  <div class="timeline-step">
-                    <span class="step-dot"></span>
-                    <div class="step-content">
-                      <span class="step-tag">Ensino Fundamental</span>
-                      <p class="step-text">Consolidação de conceitos e raciocínio lógico.</p>
-                    </div>
-                  </div>
-                  
-                  <div class="timeline-step active">
-                    <span class="step-dot"></span>
-                    <div class="step-content">
-                      <span class="step-tag">Ensino Médio</span>
-                      <p class="step-text">Alta performance e aprovação garantida.</p>
-                    </div>
-                  </div>
-                  
-                  <div class="timeline-step">
-                    <span class="step-dot"></span>
-                    <div class="step-content">
-                      <span class="step-tag">Faculdade CCI</span>
-                      <p class="step-text">Liderança profissional e ensino superior.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Structure Section -->
-        <section id="estrutura" class="structure-section scroll-reveal">
-          <div class="container text-center-header">
-            <h2 class="section-title-eyebrow">Infraestrutura Imersiva</h2>
-            <h3 class="section-main-title">Espaços Planejados para Conectar Raciocínio e Lazer</h3>
-            <p class="section-subtitle-max">
-              Ambientes amplos, modernos e equipados com tecnologia educacional que impulsiona o desejo natural de aprender de cada criança e jovem.
-            </p>
-          </div>
-          
-          <div class="container grid-5 structure-gallery">
-            <div class="structure-card glass-card col-span-3">
-              <div class="image-overlay-text">
-                <span class="structure-tag">Lazer e Saúde</span>
-                <h4 class="structure-title">Complexo Aquático e Esportivo</h4>
-                <p class="structure-text">Piscinas aquecidas e quadras poliesportivas cobertas para o pleno desenvolvimento motor dos alunos.</p>
-              </div>
-              <img src="/structure.png" alt="Piscina Colégio CCI" class="img-responsive structure-img" />
-              <!-- Cut-out Corner with Plus Button (Referência Leonardo da Vinci) -->
-              <div class="corner-cutout">
-                <div class="corner-plus-btn" style="background-color: var(--color-faculdade);">
-                  <i class="fa-solid fa-plus"></i>
-                </div>
-              </div>
-            </div>
-            
-            <div class="structure-card glass-card col-span-2">
-              <div class="image-overlay-text">
-                <span class="structure-tag">Foco & Tecnologia</span>
-                <h4 class="structure-title">Laboratório de Ciências & Robótica</h4>
-                <p class="structure-text">Bancadas de última geração para experimentos científicos e criação de autômatos.</p>
-              </div>
-              <img src="/methodology.png" alt="Laboratório Colégio CCI" class="img-responsive structure-img" />
-              <!-- Cut-out Corner with Plus Button (Referência Leonardo da Vinci) -->
-              <div class="corner-cutout">
-                <div class="corner-plus-btn" style="background-color: var(--color-medio);">
-                  <i class="fa-solid fa-plus"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="container structure-features-grid">
-            <div class="feature-badge"><i class="fa-solid fa-wifi"></i> Salas Inteligentes</div>
-            <div class="feature-badge"><i class="fa-solid fa-book-open"></i> Biblioteca Expandida</div>
-            <div class="feature-badge"><i class="fa-solid fa-utensils"></i> Refeitório Monitorado</div>
-            <div class="feature-badge"><i class="fa-solid fa-tree"></i> Pátios Arborizados</div>
-            <div class="feature-badge"><i class="fa-solid fa-shield-heart"></i> Sistema de Monitoramento 24h</div>
-          </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section class="testimonials-section scroll-reveal">
-          <div class="container testimonials-wrapper">
-            <div class="testimonial-header">
-              <h2 class="section-title-eyebrow">Depoimentos Reais</h2>
-              <h3 class="section-main-title text-white">O Orgulho de Fazer Parte da Nossa Família</h3>
-            </div>
-            
-            <div class="testimonial-slider-container">
-              <div class="glass-card testimonial-card">
-                <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
-                <p class="testimonial-quote">
-                  "Escolher o CCI para os meus dois filhos foi a melhor decisão que já tomei. A paz de espírito de saber que eles estão em um ambiente seguro, aprendendo robótica e desenvolvendo inteligência socioemocional, é indescritível. O colégio realmente entrega segurança e futuro."
-                </p>
-                <div class="testimonial-author">
-                  <div class="author-details">
-                    <strong class="author-name">Cláudia Vasconcelos</strong>
-                    <span class="author-meta">Mãe do Pedro (6º ano) e Mariana (3º ano)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Dynamic School Statistics Counter Section -->
-            <div class="stats-counter-grid">
-              <div class="stat-counter-card">
-                <h4 class="stat-number" data-target="28">0</h4>
-                <p class="stat-label">Anos Formando Vencedores</p>
-              </div>
-              <div class="stat-counter-card">
-                <h4 class="stat-number" data-target="2500">0</h4>
-                <p class="stat-label">Alunos Atendidos</p>
-              </div>
-              <div class="stat-counter-card">
-                <h4 class="stat-number" data-target="95">0</h4>
-                <span class="stat-suffix">%</span>
-                <p class="stat-label">De Aprovação no PAS/UnB</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- News & Blog Section -->
-        <section id="blog" class="blog-section scroll-reveal">
-          <div class="container text-center-header">
-            <h2 class="section-title-eyebrow">CCI em Ação</h2>
-            <h3 class="section-main-title">Acompanhe Nosso Cotidiano e Conquistas</h3>
-          </div>
-          
-          <div class="container grid-3 blog-grid">
-            <!-- Article 1 -->
-            <article class="glass-card blog-card">
-              <div class="blog-image-wrapper">
-                <span class="blog-category">Educação Infantil</span>
-                <img src="/hero_bg.png" alt="Corrida Matemática" class="img-responsive" />
-              </div>
-              <div class="blog-body">
-                <span class="blog-date"><i class="fa-regular fa-calendar"></i> 24 de Abril de 2026</span>
-                <h4 class="blog-title"><a href="#">Corrida Matemática: adição com reserva no Infantil</a></h4>
-                <p class="blog-excerpt">Uma abordagem prática e dinâmica ensinando raciocínio matemático e noções iniciais através de atividades lúdicas de alta cooperação.</p>
-                <a href="#" class="blog-read-more">Ler Artigo Completo <i class="fa-solid fa-arrow-right-long"></i></a>
-              </div>
-            </article>
-
-            <!-- Article 2 -->
-            <article class="glass-card blog-card">
-              <div class="blog-image-wrapper">
-                <span class="blog-category">Ensino Médio</span>
-                <img src="/methodology.png" alt="Ciência em Ação" class="img-responsive" />
-              </div>
-              <div class="blog-body">
-                <span class="blog-date"><i class="fa-regular fa-calendar"></i> 18 de Abril de 2026</span>
-                <h4 class="blog-title"><a href="#">Ciência em ação: criatividade tecnológica que vai longe</a></h4>
-                <p class="blog-excerpt">Estudantes do Ensino Médio desenvolvem protótipos de automação sustentável utilizando plataformas de robótica e programação.</p>
-                <a href="#" class="blog-read-more">Ler Artigo Completo <i class="fa-solid fa-arrow-right-long"></i></a>
-              </div>
-            </article>
-
-            <!-- Article 3 -->
-            <article class="glass-card blog-card">
-              <div class="blog-image-wrapper">
-                <span class="blog-category">Cidadania</span>
-                <img src="/testimonial_family.png" alt="Orientação e Cidadania" class="img-responsive" />
-              </div>
-              <div class="blog-body">
-                <span class="blog-date"><i class="fa-regular fa-calendar"></i> 10 de Abril de 2026</span>
-                <h4 class="blog-title"><a href="#">Diálogo, orientação socioemocional e cidadania ativa</a></h4>
-                <p class="blog-excerpt">Fóruns internos sobre empatia e inteligência emocional auxiliam os alunos na expressão de sentimentos e construção de valores éticos.</p>
-                <a href="#" class="blog-read-more">Ler Artigo Completo <i class="fa-solid fa-arrow-right-long"></i></a>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <!-- Events Section -->
-        <section id="eventos" class="events-section scroll-reveal">
-          <div class="container grid-2">
-            <div class="events-text">
-              <h2 class="section-title-eyebrow">Próximos Eventos</h2>
-              <h3 class="section-main-title">Participe da vida ativa da nossa comunidade escolar</h3>
-              <p class="section-description">
-                Promovemos eventos artísticos, esportivos e culturais integrando alunos, equipe pedagógica e as famílias em comemorações memoráveis.
-              </p>
-              
-              <div class="app-integration-card glass-card">
-                <div class="app-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-                <div class="app-details">
-                  <h4 class="app-title">Portal de Acesso CCI</h4>
-                  <p class="app-text">Baixe o nosso App nas lojas para ter a agenda escolar completa na palma da mão.</p>
-                  <div class="app-stores">
-                    <a href="https://play.google.com/store/apps/details?id=br.com.cosmosedu.cci.plataforma" class="store-link"><i class="fa-brands fa-google-play"></i> Google Play</a>
-                    <a href="https://apps.apple.com/br/app/cci-col%C3%A9gio-e-faculdade/id6740246700" class="store-link"><i class="fa-brands fa-apple"></i> App Store</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="events-list">
-              <!-- Event 1 -->
-              <div class="event-item glass-card">
-                <div class="event-date-box">
-                  <span class="event-day">12</span>
-                  <span class="event-month">JUN</span>
-                </div>
-                <div class="event-info">
-                  <h4 class="event-name">Feira de Inovação & Tecnologia Maker</h4>
-                  <p class="event-desc"><i class="fa-regular fa-clock"></i> 09:00 - 16:00 | Ginásio Esportivo CCI</p>
-                </div>
-              </div>
-
-              <!-- Event 2 -->
-              <div class="event-item glass-card">
-                <div class="event-date-box">
-                  <span class="event-day">27</span>
-                  <span class="event-month">JUN</span>
-                </div>
-                <div class="event-info">
-                  <h4 class="event-name">Mostra Cultural e de Valores Humanos</h4>
-                  <p class="event-desc"><i class="fa-regular fa-clock"></i> 14:00 - 19:00 | Teatro de Arena</p>
-                </div>
-              </div>
-
-              <!-- Event 3 -->
-              <div class="event-item glass-card">
-                <div class="event-date-box">
-                  <span class="event-day">15</span>
-                  <span class="event-month">AGO</span>
-                </div>
-                <div class="event-info">
-                  <h4 class="event-name">Encontro de Famílias & Diálogos Emocionais</h4>
-                  <p class="event-desc"><i class="fa-regular fa-clock"></i> 08:30 - 12:00 | Auditório Principal</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Enrollment CTA Section (Form Visita) -->
-        <section id="contato" class="cta-section scroll-reveal">
-          <div class="container grid-2 cta-grid">
-            <div class="cta-text-content">
-              <h2 class="section-title-eyebrow text-gold">Agende uma Visita</h2>
-              <h3 class="section-main-title text-white">Construa o Futuro do Seu Filho Conosco</h3>
-              <p class="section-description text-muted">
-                Venha conhecer pessoalmente nossa proposta pedagógica diferenciada, conversar com os coordenadores e descobrir cada detalhe de nossa estrutura premium em Samambaia - DF.
-              </p>
-              
-              <div class="cta-contact-info">
-                <div class="info-block">
-                  <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
-                  <div class="info-body">
-                    <span class="info-tag">Telefone da Secretaria</span>
-                    <strong class="info-val">(61) 3048-8200</strong>
-                  </div>
-                </div>
-                
-                <div class="info-block">
-                  <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
-                  <div class="info-body">
-                    <span class="info-tag">E-mail Oficial</span>
-                    <strong class="info-val">secretaria@portalcci.com.br</strong>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="cta-form-container">
-              <div class="glass-card cta-form-card">
-                <h4 class="form-title">Preencha e Agende sua Visita</h4>
-                <p class="form-subtitle">Retornaremos em menos de 24 horas úteis.</p>
-                
-                <form id="visita-form" class="cta-form" action="#" method="POST">
-                  <div class="form-group">
-                    <label for="parent-name">Nome do Responsável</label>
-                    <input type="text" id="parent-name" placeholder="Ex: Cláudia Vasconcelos" required />
-                  </div>
-                  
-                  <div class="form-grid">
-                    <div class="form-group">
-                      <label for="parent-phone">Telefone / WhatsApp</label>
-                      <input type="tel" id="parent-phone" placeholder="Ex: (61) 99999-9999" required />
-                    </div>
-                    <div class="form-group">
-                      <label for="student-grade">Série de Interesse</label>
-                      <select id="student-grade" required>
-                        <option value="" disabled selected>Selecione...</option>
-                        <option value="infantil">Educação Infantil</option>
-                        <option value="f1">Fundamental Anos Iniciais</option>
-                        <option value="f2">Fundamental Anos Finais</option>
-                        <option value="medio">Ensino Médio</option>
-                      </select>
-                    </div>
-                  </div>
-                  
-                  <button type="submit" class="btn btn-primary btn-full btn-glow btn-submit">
-                    <span>Solicitar Agendamento</span>
-                    <i class="fa-solid fa-paper-plane"></i>
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-
-      </main>
-
-      <!-- Footer Section -->
-      <footer class="site-footer">
-        <div class="container footer-grid">
-          <div class="footer-brand-col">
-            <a href="#" class="brand-logo">
-              <img src="/logo-cci-branca.png" alt="CCI Logo" class="footer-logo-img" />
-              <span class="logo-text text-white">CCI <span class="logo-tag">PREMIUM</span></span>
-            </a>
-            <p class="footer-tagline">
-              Formando mentes criativas, críticas e cidadãos prontos para transformar o mundo.
-            </p>
-            <div class="footer-social-links">
-              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-          </div>
-          
-          <div class="footer-links-col">
-            <h4 class="footer-col-title">Navegação</h4>
-            <div class="footer-links">
-              <a href="#inicio">Início</a>
-              <a href="#sobre">Quem Somos</a>
-              <a href="#metodologia">Metodologia</a>
-              <a href="#diferenciais">Diferenciais</a>
-              <a href="#estrutura">Infraestrutura</a>
-            </div>
-          </div>
-
-          <div class="footer-links-col">
-            <h4 class="footer-col-title">Sistemas</h4>
-            <div class="footer-links">
-              <a href="https://www.plurall.net/">Portal Plurall</a>
-              <a href="https://classroom.google.com/">Google Classroom</a>
-              <a href="https://portalcci.com.br/">Intranet Grupo CCI</a>
-              <a href="#eventos">Agenda de Eventos</a>
-            </div>
-          </div>
-
-          <div class="footer-contact-col">
-            <h4 class="footer-col-title">Localização & Contato</h4>
-            <p class="contact-item"><i class="fa-solid fa-location-dot"></i> QN 403, Conjunto G - Samambaia Norte, Samambaia - DF, 72319-007</p>
-            <p class="contact-item"><i class="fa-solid fa-phone"></i> (61) 3048-8200</p>
-            <p class="contact-item"><i class="fa-solid fa-envelope"></i> secretaria@portalcci.com.br</p>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-flex">
+          <p class="copyright">&copy; 2026 Colégio CCI. Todos os direitos reservados. Samambaia, Distrito Federal.</p>
+          <div class="footer-legal-links">
+            <a href="#">Políticas de Privacidade</a>
+            <span>&bull;</span>
+            <a href="#">Termos de Uso</a>
           </div>
         </div>
-        
-        <div class="footer-bottom">
-          <div class="container footer-bottom-flex">
-            <p class="copyright">&copy; 2026 Colégio CCI. Todos os direitos reservados. Samambaia, Distrito Federal.</p>
-            <div class="footer-legal-links">
-              <a href="#">Políticas de Privacidade</a>
-              <span>&bull;</span>
-              <a href="#">Termos de Uso</a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      </div>
+    </footer>
 
-    </div>
+  </div>
 
-    <!-- GSAP Libraries via CDN for Perfect Stability -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    
-    <!-- Local Javascript Module -->
-    <script type="module" src="/src/main.js"></script>
-  </body>
+  <!-- GSAP Libraries via CDN for Perfect Stability -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Local Javascript Module -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
