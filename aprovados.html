@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Veja todos os alunos do Colégio CCI aprovados no PAS/UnB, SISU e ENEM. Resultados reais de educação de excelência em Samambaia, Brasília - DF." />
+  <meta name="keywords"
+    content="aprovados CCI, PAS UnB, SISU, colegio cci aprovados, escola samambaia aprovados unb" />
+  <link rel="icon" type="image/png" href="/logo-cci-branca.png" />
+  <title>Nossos Aprovados — PAS/UnB, SISU & ENEM | Colégio CCI Samambaia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+  <div id="app">
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Navigation Header -->
+    <header id="main-header" class="glass-header">
+      <div class="header-container">
+        <a href="/" class="brand-logo" id="nav-logo">
+          <img src="/logo-cci-branca.png" alt="Colégio CCI" class="logo-img logo-light" />
+        </a>
+
+        <nav class="desktop-nav">
+          <a href="/" class="nav-link">Início</a>
+          <a href="/#sobre" class="nav-link">Sobre</a>
+          <a href="/#segmentos" class="nav-link">Segmentos</a>
+          <a href="/#metodologia" class="nav-link">Metodologia</a>
+          <a href="/aprovados.html" class="nav-link active">Aprovados</a>
+          <a href="/portal-noticias.html" class="nav-link">Notícias</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="/#contato" class="btn btn-header-portal">
+            <i class="fa-solid fa-user"></i>
+            <span>Portal do Aluno</span>
+          </a>
+          <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-overlay">
+      <div class="mobile-nav-drawer">
+        <div class="mobile-nav-header">
+          <span class="logo-text">CCI <span class="logo-tag">PREMIUM</span></span>
+          <button class="mobile-menu-close" aria-label="Close Menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <nav class="mobile-nav-links">
+          <a href="/" class="mobile-link">Início</a>
+          <a href="/#sobre" class="mobile-link">Sobre</a>
+          <a href="/#segmentos" class="mobile-link">Segmentos</a>
+          <a href="/#metodologia" class="mobile-link">Metodologia</a>
+          <a href="/aprovados.html" class="mobile-link">Aprovados</a>
+          <a href="/portal-noticias.html" class="mobile-link">Notícias</a>
+          <div class="mobile-cta-group">
+            <a href="/#contato" class="btn btn-header-visit btn-full text-center">Agendar Visita <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <main>
+
+      <!-- ═══════════════════════════════════════════
+           HERO SECTION — DARK CINEMATIC
+           ═══════════════════════════════════════════ -->
+      <section class="aprov-hero">
+        <!-- Decorative Background Elements -->
+        <div class="aprov-hero-bg-decor" aria-hidden="true">
+          <span class="aprov-confetti c1"></span>
+          <span class="aprov-confetti c2"></span>
+          <span class="aprov-confetti c3"></span>
+          <span class="aprov-confetti c4"></span>
+          <span class="aprov-confetti c5"></span>
+          <span class="aprov-confetti c6"></span>
+          <span class="aprov-glow-circle gc1"></span>
+          <span class="aprov-glow-circle gc2"></span>
+        </div>
+
+        <div class="container aprov-hero-inner">
+          <div class="hero-badge animate-fade-up">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Resultados Oficiais 2026</span>
+          </div>
+
+          <h1 class="hero-title animate-text-stagger">
+            Nossos <span class="gradient-text-gold">Aprovados</span>
+          </h1>
+
+          <p class="hero-subtitle animate-fade-up">
+            Alunos do CCI que conquistaram suas vagas nas melhores universidades do Brasil —
+            do PAS/UnB ao SISU nacional. Cada aprovação é uma história de dedicação e excelência.
+          </p>
+
+          <div class="aprov-hero-stats animate-fade-up">
+            <div class="aprov-hstat">
+              <span class="aprov-hstat-num" id="hero-total">0</span>
+              <span class="aprov-hstat-label">Aprovações em 2026</span>
+            </div>
+            <span class="aprov-hstat-divider"></span>
+            <div class="aprov-hstat">
+              <span class="aprov-hstat-num" id="hero-unis">0</span>
+              <span class="aprov-hstat-label">Universidades</span>
+            </div>
+            <span class="aprov-hstat-divider"></span>
+            <div class="aprov-hstat">
+              <span class="aprov-hstat-num" id="hero-courses">0</span>
+              <span class="aprov-hstat-label">Cursos Diferentes</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════
+           FILTERS + GRID SECTION
+           ═══════════════════════════════════════════ -->
+      <section class="aprov-main-section">
+        <div class="container">
+
+          <!-- Year Tabs -->
+          <div class="aprov-year-tabs" role="tablist" aria-label="Selecionar ano">
+            <button class="aprov-year-tab active" data-year="2026" role="tab">2026</button>
+            <button class="aprov-year-tab" data-year="2025" role="tab">2025</button>
+            <button class="aprov-year-tab" data-year="2024" role="tab">2024</button>
+            <button class="aprov-year-tab" data-year="2023" role="tab">2023</button>
+          </div>
+
+          <!-- Filter Bar -->
+          <div class="aprov-filter-bar">
+            <div class="aprov-filter-pills" role="group" aria-label="Filtrar por tipo">
+              <button class="aprov-pill active" data-filter="all" id="filter-all">
+                <i class="fa-solid fa-th-large"></i> Todos
+              </button>
+              <button class="aprov-pill" data-filter="pas" id="filter-pas">
+                <i class="fa-solid fa-star"></i> PAS/UnB
+              </button>
+              <button class="aprov-pill" data-filter="sisu" id="filter-sisu">
+                <i class="fa-solid fa-graduation-cap"></i> SISU
+              </button>
+              <button class="aprov-pill" data-filter="enem" id="filter-enem">
+                <i class="fa-solid fa-medal"></i> ENEM
+              </button>
+            </div>
+            <div class="aprov-search-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="aprov-search" placeholder="Buscar nome ou curso..." autocomplete="off"
+                aria-label="Buscar aprovados" />
+            </div>
+          </div>
+
+          <!-- Results Info -->
+          <div class="aprov-results-info">
+            <i class="fa-solid fa-circle-check"></i>
+            <span><strong id="aprov-count">0</strong> aprovações em <strong id="aprov-year">2026</strong></span>
+          </div>
+
+          <!-- Destaques Row (Featured top approvals) -->
+          <div class="aprov-destaques-section" id="aprov-destaques-wrap">
+            <h3 class="aprov-destaques-title">
+              <i class="fa-solid fa-trophy"></i> Destaques do Ano
+            </h3>
+            <div class="aprov-destaques-grid" id="aprov-destaques"></div>
+          </div>
+
+          <!-- General Students Grid -->
+          <h3 class="aprov-all-title" id="aprov-all-label">Todos os Aprovados</h3>
+          <div class="aprov-students-grid" id="aprov-grid"></div>
+
+          <!-- Empty State -->
+          <div class="aprov-empty-state" id="aprov-empty" style="display:none;" aria-live="polite">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <p>Nenhum resultado encontrado.</p>
+            <span>Tente outro nome, curso ou ajuste os filtros acima.</span>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand-col">
+          <a href="/" class="brand-logo">
+            <img src="/logo-cci-branca.png" alt="CCI Logo" class="footer-logo-img" />
+            <span class="logo-text text-white">CCI <span class="logo-tag">PREMIUM</span></span>
+          </a>
+          <p class="footer-tagline">
+            Formando mentes criativas, críticas e cidadãos prontos para transformar o mundo.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Navegação</h4>
+          <div class="footer-links">
+            <a href="/">Início</a>
+            <a href="/#sobre">Quem Somos</a>
+            <a href="/#metodologia">Metodologia</a>
+            <a href="/aprovados.html">Aprovados</a>
+            <a href="/portal-noticias.html">Notícias</a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Sistemas</h4>
+          <div class="footer-links">
+            <a href="https://www.plurall.net/">Portal Plurall</a>
+            <a href="https://classroom.google.com/">Google Classroom</a>
+            <a href="https://portalcci.com.br/">Intranet Grupo CCI</a>
+          </div>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4 class="footer-col-title">Localização &amp; Contato</h4>
+          <p class="contact-item"><i class="fa-solid fa-location-dot"></i> QN 403, Conjunto G - Samambaia Norte,
+            Samambaia - DF, 72319-007</p>
+          <p class="contact-item"><i class="fa-solid fa-phone"></i> (61) 3048-8200</p>
+          <p class="contact-item"><i class="fa-solid fa-envelope"></i> secretaria@portalcci.com.br</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-bottom-flex">
+          <p class="copyright">&copy; 2026 Colégio CCI. Todos os direitos reservados. Samambaia, Distrito Federal.</p>
+          <div class="footer-legal-links">
+            <a href="#">Políticas de Privacidade</a>
+            <span>&bull;</span>
+            <a href="#">Termos de Uso</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /#app -->
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- Main app (header, mobile nav, smooth scroll) -->
+  <script type="module" src="/src/main.js"></script>
+
+  <!-- ═══════════════════════════════════════════════
+       APROVADOS PAGE LOGIC (Data + Rendering + Filters)
+       ═══════════════════════════════════════════════ -->
+  <script>
+    // ─────────────────────────────────────────────────
+    // STUDENT DATA — substitua pelos dados reais
+    // ─────────────────────────────────────────────────
+    const STUDENTS = {
+      2026: [
+        // ── PAS / UnB ──
+        { nome: "Ana Luíza Sousa",       curso: "Medicina",                  universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas",  destaque: true,  tag: "1ª Chamada PAS" },
+        { nome: "Letícia Borges",         curso: "Medicina",                  universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas",  destaque: true,  tag: "PAS/UnB" },
+        { nome: "Gabriel Ferreira",       curso: "Direito",                   universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas",  destaque: true,  tag: "PAS/UnB" },
+        { nome: "Isabela Rodrigues",      curso: "Engenharia Civil",           universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas" },
+        { nome: "Lucas Mendes",           curso: "Ciência da Computação",      universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas" },
+        { nome: "Mariana Silva",          curso: "Psicologia",                 universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas" },
+        { nome: "Pedro Alves",            curso: "Administração",              universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas" },
+        { nome: "Carolina Lima",          curso: "Arquitetura e Urbanismo",    universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas" },
+        { nome: "Rafael Pereira",         curso: "Engenharia Mecânica",        universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas" },
+        { nome: "Beatriz Nunes",          curso: "Nutrição",                   universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas" },
+        { nome: "Henrique Costa",         curso: "Física",                     universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas" },
+        { nome: "Mateus Ribeiro",         curso: "Engenharia Elétrica",        universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas" },
+        { nome: "Amanda Ferreira",        curso: "Odontologia",                universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas" },
+        { nome: "Bruno Santos",           curso: "Jornalismo",                 universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas" },
+        // ── SISU ──
+        { nome: "Fernanda Rocha",         curso: "Direito",                    universidade: "Universidade de São Paulo",             sigla: "USP",      tipo: "sisu", destaque: true,  tag: "SISU / USP" },
+        { nome: "Thiago Oliveira",        curso: "Medicina",                   universidade: "Univ. Federal de Minas Gerais",         sigla: "UFMG",     tipo: "sisu", destaque: true,  tag: "SISU / UFMG" },
+        { nome: "André Martins",          curso: "Engenharia de Produção",     universidade: "Universidade Estadual de Campinas",     sigla: "UNICAMP",  tipo: "sisu" },
+        { nome: "Bianca Carvalho",        curso: "Farmácia",                   universidade: "Universidade Federal de Goiás",         sigla: "UFG",      tipo: "sisu" },
+        { nome: "Camila Pereira",         curso: "Medicina",                   universidade: "Universidade Federal da Bahia",         sigla: "UFBA",     tipo: "sisu" },
+        // ── ENEM ──
+        { nome: "Júlia Nunes",            curso: "Medicina",                   universidade: "Centro Universitário de Brasília",      sigla: "UniCeub",  tipo: "enem" },
+        { nome: "Diego Souza",            curso: "Engenharia de Software",     universidade: "Instituto Federal de Brasília",         sigla: "IFB",      tipo: "enem" },
+        { nome: "Larissa Melo",           curso: "Design Gráfico",             universidade: "Universidade Católica de Brasília",     sigla: "UCB",      tipo: "enem" },
+      ],
+      2025: [
+        { nome: "Victor Almeida",         curso: "Medicina",                   universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas",  destaque: true,  tag: "PAS/UnB" },
+        { nome: "Sofia Cunha",            curso: "Direito",                    universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas",  destaque: true,  tag: "PAS/UnB" },
+        { nome: "Eduardo Lima",           curso: "Ciência da Computação",      universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas" },
+        { nome: "Natália Rocha",          curso: "Arquitetura e Urbanismo",    universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas" },
+        { nome: "Rodrigo Gomes",          curso: "Engenharia Civil",           universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas" },
+        { nome: "Priscila Santos",        curso: "Psicologia",                 universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas" },
+        { nome: "Felipe Barbosa",         curso: "Medicina",                   universidade: "Univ. Federal de Minas Gerais",         sigla: "UFMG",     tipo: "sisu", destaque: true,  tag: "SISU / UFMG" },
+        { nome: "Aline Costa",            curso: "Odontologia",                universidade: "Universidade Federal de Goiás",         sigla: "UFG",      tipo: "sisu" },
+        { nome: "Renato Figueiredo",      curso: "Direito",                    universidade: "Universidade de São Paulo",             sigla: "USP",      tipo: "sisu", destaque: true,  tag: "SISU / USP" },
+      ],
+      2024: [
+        { nome: "Carlos Mendes",          curso: "Medicina",                   universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas",  destaque: true,  tag: "PAS/UnB" },
+        { nome: "Juliana Faria",          curso: "Direito",                    universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas",  destaque: true,  tag: "PAS/UnB" },
+        { nome: "Paulo Ribeiro",          curso: "Engenharia Elétrica",        universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas" },
+        { nome: "Renata Lima",            curso: "Psicologia",                 universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas" },
+        { nome: "Thamiris Souza",         curso: "Medicina",                   universidade: "Universidade de São Paulo",             sigla: "USP",      tipo: "sisu", destaque: true,  tag: "SISU / USP" },
+        { nome: "Leonardo Fonseca",       curso: "Farmácia",                   universidade: "Universidade Federal de Goiás",         sigla: "UFG",      tipo: "sisu" },
+        { nome: "Tatiane Rocha",          curso: "Design",                     universidade: "Universidade Católica de Brasília",     sigla: "UCB",      tipo: "enem" },
+      ],
+      2023: [
+        { nome: "Marcelo Alves",          curso: "Medicina",                   universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas",  destaque: true,  tag: "PAS/UnB" },
+        { nome: "Vanessa Costa",          curso: "Direito",                    universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas",  destaque: true,  tag: "PAS/UnB" },
+        { nome: "Samuel Oliveira",        curso: "Engenharia Elétrica",        universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas" },
+        { nome: "Débora Menezes",         curso: "Psicologia",                 universidade: "Universidade de Brasília",              sigla: "UnB",      tipo: "pas" },
+        { nome: "Cristiano Lima",         curso: "Medicina",                   universidade: "Universidade Federal de Goiás",         sigla: "UFG",      tipo: "sisu", destaque: true,  tag: "SISU / UFG" },
+        { nome: "Ingrid Soares",          curso: "Direito",                    universidade: "Universidade de São Paulo",             sigla: "USP",      tipo: "sisu" },
+      ],
+    };
+
+    // ─────────────────────────────────────────────────
+    // STATE
+    // ─────────────────────────────────────────────────
+    let currentYear = 2026;
+    let currentFilter = 'all';
+    let searchQuery = '';
+
+    // ─────────────────────────────────────────────────
+    // HELPERS
+    // ─────────────────────────────────────────────────
+    function getInitials(name) {
+      const parts = name.trim().split(' ');
+      return (parts[0][0] + (parts[1] ? parts[1][0] : '')).toUpperCase();
+    }
+
+    function getTypeLabel(tipo) {
+      return { pas: 'PAS/UnB', sisu: 'SISU', enem: 'ENEM' }[tipo] || tipo.toUpperCase();
+    }
+
+    const AVATAR_COLORS = ['#10b981','#6366f1','#f59e0b','#e11d48','#3b82f6','#8b5cf6','#f97316','#14b8a6','#ec4899','#0ea5e9'];
+    function getAvatarColor(name) {
+      return AVATAR_COLORS[name.charCodeAt(0) % AVATAR_COLORS.length];
+    }
+
+    function animateCounter(el, target, delay = 0) {
+      if (!el || isNaN(target)) return;
+      setTimeout(() => {
+        let count = 0;
+        const duration = 1200;
+        const fps = 1000 / 60;
+        const frames = Math.round(duration / fps);
+        const inc = target / frames;
+        let frame = 0;
+        const tick = () => {
+          frame++;
+          count += inc;
+          if (frame < frames) {
+            el.textContent = Math.ceil(count);
+            setTimeout(tick, fps);
+          } else {
+            el.textContent = target;
+          }
+        };
+        tick();
+      }, delay);
+    }
+
+    // ─────────────────────────────────────────────────
+    // RENDER HELPERS
+    // ─────────────────────────────────────────────────
+    function renderDestaqueCard(s) {
+      const av = getAvatarColor(s.nome);
+      const badge = `<span class="aprov-type-badge aprov-type-${s.tipo}">${s.tag || getTypeLabel(s.tipo)}</span>`;
+      return `
+        <div class="aprov-destaque-card">
+          <div class="aprov-destaque-header">
+            ${badge}
+            <i class="fa-solid fa-trophy aprov-trophy-icon"></i>
+          </div>
+          <div class="aprov-destaque-avatar" style="background:${av};">${getInitials(s.nome)}</div>
+          <div class="aprov-destaque-info">
+            <h4 class="aprov-destaque-name">${s.nome}</h4>
+            <p class="aprov-destaque-course">${s.curso}</p>
+            <p class="aprov-destaque-uni"><i class="fa-solid fa-building-columns"></i> ${s.universidade}</p>
+          </div>
+        </div>`;
+    }
+
+    function renderStudentCard(s) {
+      const av = getAvatarColor(s.nome);
+      const badgeSm = `<span class="aprov-type-badge-sm aprov-type-${s.tipo}">${getTypeLabel(s.tipo)}</span>`;
+      const starBadge = s.destaque ? `<span class="aprov-star-badge" title="Destaque"><i class="fa-solid fa-star"></i></span>` : '';
+      return `
+        <div class="aprov-student-card aprov-card-${s.tipo}">
+          <div class="aprov-student-top">
+            ${badgeSm}
+            ${starBadge}
+          </div>
+          <div class="aprov-student-avatar" style="--av-color:${av};">${getInitials(s.nome)}</div>
+          <div class="aprov-student-body">
+            <h5 class="aprov-student-name">${s.nome}</h5>
+            <p class="aprov-student-course">${s.curso}</p>
+            <p class="aprov-student-uni">${s.sigla}</p>
+          </div>
+        </div>`;
+    }
+
+    // ─────────────────────────────────────────────────
+    // FILTER + RENDER
+    // ─────────────────────────────────────────────────
+    function getFiltered() {
+      let data = STUDENTS[currentYear] || [];
+      if (currentFilter !== 'all') data = data.filter(s => s.tipo === currentFilter);
+      if (searchQuery) {
+        const q = searchQuery.toLowerCase();
+        data = data.filter(s =>
+          s.nome.toLowerCase().includes(q) ||
+          s.curso.toLowerCase().includes(q) ||
+          s.universidade.toLowerCase().includes(q) ||
+          s.sigla.toLowerCase().includes(q)
+        );
+      }
+      return data;
+    }
+
+    function render() {
+      const filtered = getFiltered();
+      const destaques = filtered.filter(s => s.destaque);
+
+      // Update counters
+      document.getElementById('aprov-count').textContent = filtered.length;
+      document.getElementById('aprov-year').textContent = currentYear;
+
+      // Destaques section
+      const destaquesWrap = document.getElementById('aprov-destaques-wrap');
+      const destaquesEl = document.getElementById('aprov-destaques');
+      const allLabel = document.getElementById('aprov-all-label');
+      if (destaques.length > 0 && !searchQuery) {
+        destaquesWrap.style.display = 'block';
+        destaquesEl.innerHTML = destaques.map(renderDestaqueCard).join('');
+        allLabel.style.display = 'block';
+        // GSAP animate destaques
+        if (typeof gsap !== 'undefined') {
+          gsap.fromTo('#aprov-destaques .aprov-destaque-card',
+            { opacity: 0, y: 30 },
+            { opacity: 1, y: 0, duration: 0.7, stagger: 0.12, ease: 'power3.out' }
+          );
+        }
+      } else {
+        destaquesWrap.style.display = 'none';
+        allLabel.style.display = searchQuery ? 'none' : 'block';
+      }
+
+      // Main grid
+      const gridEl = document.getElementById('aprov-grid');
+      const emptyEl = document.getElementById('aprov-empty');
+      if (filtered.length === 0) {
+        gridEl.innerHTML = '';
+        emptyEl.style.display = 'flex';
+      } else {
+        emptyEl.style.display = 'none';
+        gridEl.innerHTML = filtered.map(renderStudentCard).join('');
+        if (typeof gsap !== 'undefined') {
+          gsap.fromTo('#aprov-grid .aprov-student-card',
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0, duration: 0.45, stagger: 0.04, ease: 'power3.out' }
+          );
+        }
+      }
+    }
+
+    function updateHeroStats() {
+      const yearData = STUDENTS[2026] || [];
+      const unis = new Set(yearData.map(s => s.sigla)).size;
+      const courses = new Set(yearData.map(s => s.curso)).size;
+      animateCounter(document.getElementById('hero-total'), yearData.length, 600);
+      animateCounter(document.getElementById('hero-unis'), unis, 750);
+      animateCounter(document.getElementById('hero-courses'), courses, 900);
+    }
+
+    // ─────────────────────────────────────────────────
+    // EVENT LISTENERS
+    // ─────────────────────────────────────────────────
+    document.addEventListener('DOMContentLoaded', () => {
+      // Year tabs
+      document.querySelectorAll('.aprov-year-tab').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.aprov-year-tab').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentYear = parseInt(btn.dataset.year, 10);
+          render();
+        });
+      });
+
+      // Filter pills
+      document.querySelectorAll('.aprov-pill').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.aprov-pill').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentFilter = btn.dataset.filter;
+          render();
+        });
+      });
+
+      // Search
+      const searchInput = document.getElementById('aprov-search');
+      if (searchInput) {
+        searchInput.addEventListener('input', e => {
+          searchQuery = e.target.value.trim();
+          render();
+        });
+      }
+
+      // Initial render
+      render();
+      updateHeroStats();
+    });
+  </script>
+</body>
+
+</html>

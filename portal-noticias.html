@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portal de Notícias e Eventos do Colégio CCI. Acompanhe o dia a dia, comunicados importantes e as conquistas dos nossos alunos em Samambaia - DF." />
+  <link rel="icon" type="image/png" href="/logo-cci-branca.png" />
+  <title>Novidades & Eventos | Portal de Notíccias Colégio CCI</title>
+
+  <!-- Premium Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Local Stylesheet -->
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+  <!-- App Container -->
+  <div id="app">
+    <!-- Ambient Backlight Elements -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Navigation Header -->
+    <header id="main-header" class="glass-header dark-header">
+      <div class="header-container">
+        <a href="/" class="brand-logo" id="nav-logo">
+          <img src="/logo-cci-branca.png" alt="Colégio CCI" class="logo-img" />
+          <span class="logo-text text-white">CCI <span class="logo-tag">PREMIUM</span></span>
+        </a>
+
+        <nav class="desktop-nav">
+          <a href="/" class="nav-link">Home</a>
+          <a href="/institucional.html" class="nav-link">Sobre</a>
+          <a href="/#segmentos" class="nav-link">Segmentos</a>
+          <a href="/#metodologia" class="nav-link">Metodologia</a>
+          <a href="/portal-noticias.html" class="nav-link active">Notíccias</a>
+          <a href="/#eventos" class="nav-link">Eventos</a>
+        </nav>
+
+        <div class="header-actions">
+          <button id="btn-admin-panel" class="btn btn-header-portal btn-admin-trigger">
+            <i class="fa-solid fa-lock"></i>
+            <span>Área Publicidade</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-top: 120px; min-height: 80vh;">
+      
+      <!-- Page Header -->
+      <section class="news-header-section container">
+        <div class="text-center-header">
+          <h2 class="section-title-eyebrow">CCI Em Foco</h2>
+          <h1 class="section-main-title" style="color: var(--text-white);">Portal de Notíccias & Eventos</h1>
+          <p class="section-subtitle-max" style="color: var(--text-muted);">
+            Acompanhe em tempo real os acontecimentos diários, eventos pedagógicos e as novidades que movem nossa comunidade escolar.
+          </p>
+        </div>
+      </section>
+
+      <!-- Filters & Search Toolbar -->
+      <section class="toolbar-section container scroll-reveal active">
+        <div class="glass-card toolbar-card">
+          <div class="search-box-wrapper">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="news-search-input" placeholder="Pesquisar notícias ou eventos..." />
+          </div>
+          
+          <div class="category-filters-container">
+            <button class="filter-btn active" data-category="all">Todos</button>
+            <button class="filter-btn" data-category="Eventos">Eventos</button>
+            <button class="filter-btn" data-category="Educação Infantil">Infantil</button>
+            <button class="filter-btn" data-category="Ensino Fundamental">Fundamental</button>
+            <button class="filter-btn" data-category="Ensino Médio">Médio</button>
+            <button class="filter-btn" data-category="Cidadania">Cidadania</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- News Grid Section -->
+      <section class="news-grid-section container">
+        <div id="news-loading" class="news-loading-state">
+          <i class="fa-solid fa-circle-notch fa-spin loading-spinner"></i>
+          <p>Carregando as novidades do Colégio CCI...</p>
+        </div>
+
+        <div id="news-empty" class="news-empty-state" style="display: none;">
+          <i class="fa-solid fa-newspaper empty-icon"></i>
+          <h4>Nenhuma notícia encontrada</h4>
+          <p>Tente mudar o filtro ou fazer outra pesquisa.</p>
+        </div>
+
+        <div id="news-grid" class="grid-3 blog-grid" style="min-height: 300px;">
+          <!-- Dynamically populated from Supabase -->
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Modal: News Detail View -->
+    <div id="news-detail-modal" class="modal-overlay" style="display: none;">
+      <div class="modal-container glass-card news-modal-content" data-lenis-prevent>
+        <button class="modal-close-btn" id="close-news-modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-body">
+          <div class="modal-news-image-wrapper">
+            <span class="modal-news-category" id="modal-category">Categoria</span>
+            <img id="modal-image" src="" alt="Imagem da notícia" />
+          </div>
+          <div class="modal-news-meta">
+            <span id="modal-date"><i class="fa-regular fa-calendar"></i> Data</span>
+            <span id="modal-read-time"><i class="fa-regular fa-clock"></i> Tempo de leitura</span>
+          </div>
+          <h2 class="modal-news-title" id="modal-title">Título do Post</h2>
+          <div class="modal-news-excerpt" id="modal-excerpt">Resumo detalhado</div>
+          <div class="modal-news-divider"></div>
+          <div class="modal-news-full-content" id="modal-content">
+            Conteúdo completo
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Admin Login -->
+    <div id="admin-login-modal" class="modal-overlay" style="display: none;">
+      <div class="modal-container glass-card login-modal-content" data-lenis-prevent style="max-width: 450px;">
+        <button class="modal-close-btn" id="close-login-modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="login-header">
+          <div class="lock-circle">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3>Área da Publicidade</h3>
+          <p>Faça login com sua conta do Supabase para gerenciar as publicações do colégio.</p>
+        </div>
+        
+        <div id="login-error-msg" class="alert-error" style="display: none;">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <span id="login-error-text">E-mail ou senha incorretos.</span>
+        </div>
+
+        <form id="admin-login-form">
+          <div class="form-group">
+            <label for="admin-email">E-mail Corporativo</label>
+            <div class="input-with-icon">
+              <i class="fa-regular fa-envelope input-icon"></i>
+              <input type="email" id="admin-email" placeholder="publicidade@portalcci.com.br" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="admin-password">Senha de Acesso</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-lock input-icon"></i>
+              <input type="password" id="admin-password" placeholder="••••••••" required />
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full btn-glow" id="btn-submit-login">
+            <span>Entrar no Painel</span>
+            <i class="fa-solid fa-right-to-bracket"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal: Admin Dashboard (Gerenciamento de Notícias) -->
+    <div id="admin-dashboard-modal" class="modal-overlay" style="display: none;">
+      <div class="modal-container glass-card dashboard-modal-content" data-lenis-prevent>
+        <div class="dashboard-header">
+          <div class="db-title-area">
+            <h3>Painel de Publicidade CCI</h3>
+            <span class="user-badge" id="admin-user-email">email@user.com</span>
+          </div>
+          <div class="db-actions-area">
+            <button class="btn btn-secondary" id="btn-create-post-trigger">
+              <i class="fa-solid fa-plus"></i> Novo Post
+            </button>
+            <button class="btn btn-logout" id="btn-admin-logout" style="border: 2.5px solid #e11d48; box-shadow: 4px 4px 0px #e11d48; color: #e11d48;">
+              <i class="fa-solid fa-right-from-bracket"></i> Sair
+            </button>
+            <button class="modal-close-btn" id="close-dashboard-modal" style="position: static; transform: none; background: none; border: none; font-size: 1.5rem;">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+
+        <div id="db-msg" class="alert-success" style="display: none;">
+          <i class="fa-solid fa-circle-check"></i>
+          <span id="db-msg-text">Ação executada com sucesso!</span>
+        </div>
+
+        <!-- Dashboard Content Grid -->
+        <div class="dashboard-grid">
+          <!-- List of posts (Left/Main Panel) -->
+          <div class="posts-list-table-wrapper glass-card">
+            <h4>Publicações Ativas</h4>
+            <div class="table-responsive">
+              <table class="posts-table">
+                <thead>
+                  <tr>
+                    <th>Data</th>
+                    <th>Título</th>
+                    <th>Categoria</th>
+                    <th>Ações</th>
+                  </tr>
+                </thead>
+                <tbody id="admin-posts-tbody">
+                  <!-- Dynamically populated -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Create/Edit Form Panel (Right Side Panel - hidden by default, toggled on click) -->
+          <div class="post-form-panel glass-card" id="post-form-panel" style="display: none;">
+            <h4 id="form-panel-title">Nova Publicação</h4>
+            <form id="news-editor-form">
+              <input type="hidden" id="edit-post-id" value="" />
+              
+              <div class="form-group">
+                <label for="post-title">Título do Post</label>
+                <input type="text" id="post-title" placeholder="Ex: Feira de Ciências CCI 2026" required />
+              </div>
+              
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="post-category">Categoria</label>
+                  <select id="post-category" required>
+                    <option value="Eventos">Eventos</option>
+                    <option value="Educação Infantil">Educação Infantil</option>
+                    <option value="Ensino Fundamental">Ensino Fundamental</option>
+                    <option value="Ensino Médio">Ensino Médio</option>
+                    <option value="Cidadania">Cidadania</option>
+                  </select>
+                </div>
+                
+                <div class="form-group">
+                  <label for="post-read-time">Tempo de Leitura (Ex: 3 min)</label>
+                  <input type="text" id="post-read-time" placeholder="3 min de leitura" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="post-image-url">URL da Imagem de Destaque</label>
+                <input type="url" id="post-image-url" placeholder="https://exemplo.com/foto.jpg" />
+                <span class="field-hint">Dica: Deixe em branco para usar uma imagem padrão do colégio.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="post-excerpt">Resumo / Subtítulo</label>
+                <textarea id="post-excerpt" rows="2" placeholder="Resumo curto que aparece no card de notícias..." required></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="post-content">Conteúdo Completo (Aceita HTML básico)</label>
+                <textarea id="post-content" rows="6" placeholder="Escreva a notícia completa aqui..." required></textarea>
+              </div>
+
+              <div class="form-actions-row">
+                <button type="button" class="btn btn-secondary" id="btn-cancel-post-edit">Cancelar</button>
+                <button type="submit" class="btn btn-primary" id="btn-submit-post">
+                  <span>Publicar Notícia</span>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand-col">
+          <a href="#" class="brand-logo">
+            <img src="/logo-cci-branca.png" alt="CCI Logo" class="footer-logo-img" />
+            <span class="logo-text text-white">CCI <span class="logo-tag">PREMIUM</span></span>
+          </a>
+          <p class="footer-tagline">
+            Formando mentes criativas, críticas e cidadãos prontos para transformar o mundo.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Navegação</h4>
+          <div class="footer-links">
+            <a href="/">Início</a>
+            <a href="/institucional.html">Quem Somos</a>
+            <a href="/#metodologia">Metodologia</a>
+            <a href="/#diferenciais">Diferenciais</a>
+            <a href="/#estrutura">Infraestrutura</a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Sistemas</h4>
+          <div class="footer-links">
+            <a href="https://www.plurall.net/">Portal Plurall</a>
+            <a href="https://classroom.google.com/">Google Classroom</a>
+            <a href="https://portalcci.com.br/">Intranet Grupo CCI</a>
+            <a href="/#eventos">Agenda de Eventos</a>
+          </div>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4 class="footer-col-title">Localização & Contato</h4>
+          <p class="contact-item"><i class="fa-solid fa-location-dot"></i> QN 403, Conjunto G - Samambaia Norte, Samambaia - DF, 72319-007</p>
+          <p class="contact-item"><i class="fa-solid fa-phone"></i> (61) 3048-8200</p>
+          <p class="contact-item"><i class="fa-solid fa-envelope"></i> secretaria@portalcci.com.br</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-bottom-flex">
+          <p class="copyright">&copy; 2026 Colégio CCI. Todos os direitos reservados. Samambaia, Distrito Federal.</p>
+          <div class="footer-legal-links">
+            <a href="#">Políticas de Privacidade</a>
+            <span>&bull;</span>
+            <a href="#">Termos de Uso</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- GSAP Libraries via CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Local Javascript Module -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

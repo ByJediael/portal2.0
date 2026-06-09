@@ -7,6 +7,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         institucional: resolve(__dirname, 'institucional.html'),
+        portalNoticias: resolve(__dirname, 'portal-noticias.html'),
       },
     },
   },

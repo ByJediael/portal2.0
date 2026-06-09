@@ -46,9 +46,8 @@
           <a href="#segmentos" class="nav-link">Segmentos</a>
           <a href="#metodologia" class="nav-link">Metodologia</a>
           <a href="#diferenciais" class="nav-link">Diferenciais</a>
-          <a href="#estrutura" class="nav-link">Infraestrutura</a>
-          <a href="#blog" class="nav-link">Novidades</a>
-          <a href="#eventos" class="nav-link">Eventos</a>
+          <a href="/aprovados.html" class="nav-link">Aprovados</a>
+          <a href="#blog" class="nav-link">Notícias</a>
         </nav>
 
         <div class="header-actions">
@@ -80,9 +79,8 @@
           <a href="#segmentos" class="mobile-link">Segmentos</a>
           <a href="#metodologia" class="mobile-link">Metodologia</a>
           <a href="#diferenciais" class="mobile-link">Diferenciais</a>
-          <a href="#estrutura" class="mobile-link">Infraestrutura</a>
-          <a href="#blog" class="mobile-link">Novidades</a>
-          <a href="#eventos" class="mobile-link">Eventos</a>
+          <a href="/aprovados.html" class="mobile-link">Aprovados</a>
+          <a href="#blog" class="mobile-link">Notícias</a>
           <div class="mobile-cta-group">
             <a href="#contato" class="btn btn-header-visit btn-full text-center">Agendar Visita <i
                 class="fa-solid fa-arrow-right"></i></a>
@@ -145,13 +143,13 @@
               <span class="indicator-label">Lugar em Samambaia</span>
             </div>
           </div>
-        </div>
 
-        <div class="hero-scroll-indicator">
-          <span class="mouse-icon">
-            <span class="mouse-wheel"></span>
-          </span>
-          <span class="scroll-text">Deslize para Explorar</span>
+          <div class="section-scroll-hint animate-fade-up" aria-hidden="true">
+            <span class="mouse-icon">
+              <span class="mouse-wheel"></span>
+            </span>
+            <span class="scroll-text">Deslize para Explorar</span>
+          </div>
         </div>
       </section>
 
@@ -258,7 +256,7 @@
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </a>
             <div class="segment-image-wrapper">
-              <img src="/structure.png" alt="Ensino Fundamental I CCI" class="segment-img" />
+              <img src="/1ao4.JPG" alt="Ensino Fundamental I CCI" class="segment-img" />
             </div>
             <div class="segment-badge-bottom">
               <span class="segment-subtitle">1º ano ao 4º ano</span>
@@ -286,7 +284,7 @@
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </a>
             <div class="segment-image-wrapper">
-              <img src="/hero_bg.png" alt="Ensino Médio CCI" class="segment-img" />
+              <img src="/em.jpeg" alt="Ensino Médio CCI" class="segment-img" />
             </div>
             <div class="segment-badge-bottom">
               <span class="segment-subtitle">9º ano a 3ª série EM</span>
@@ -435,24 +433,7 @@
           </div>
         </div>
 
-        <!-- Partnership Section -->
-        <div class="container partners-container">
-          <h4 class="partners-title">Nossas Parcerias Educacionais de Excelência</h4>
-          <div class="partners-logos">
-            <div class="partner-logo-item">
-              <span class="partner-badge"><i class="fa-solid fa-shield-check"></i> Sistema Positivo</span>
-            </div>
-            <div class="partner-logo-item">
-              <span class="partner-badge"><i class="fa-solid fa-brain-circuit"></i> Escola da Inteligência</span>
-            </div>
-            <div class="partner-logo-item">
-              <span class="partner-badge"><i class="fa-solid fa-chess"></i> Mind Lab</span>
-            </div>
-            <div class="partner-logo-item">
-              <span class="partner-badge"><i class="fa-solid fa-laptop-code"></i> Google for Education</span>
-            </div>
-          </div>
-        </div>
+
       </section>
 
       <!-- Differentials Section -->
@@ -494,10 +475,19 @@
           <div class="differentials-visual">
             <div class="journey-timeline">
               <h4 class="timeline-header-title">Sua Jornada Conosco</h4>
+              
+              <!-- Tab Selector / Buttons (Apple Segments style) -->
+              <div class="timeline-tabs">
+                <button class="timeline-tab-btn active" data-step="1">Infantil</button>
+                <button class="timeline-tab-btn" data-step="2">Fundamental</button>
+                <button class="timeline-tab-btn" data-step="3">Médio</button>
+              </div>
+
               <div class="timeline-wrapper">
                 <div class="timeline-line"></div>
 
-                <div class="timeline-step">
+                <!-- Step 1: Educação Infantil -->
+                <div class="timeline-step active" data-step="1">
                   <span class="step-dot"></span>
                   <div class="step-content">
                     <span class="step-tag">Educação Infantil</span>
@@ -505,7 +495,8 @@
                   </div>
                 </div>
 
-                <div class="timeline-step">
+                <!-- Step 2: Ensino Fundamental -->
+                <div class="timeline-step" data-step="2">
                   <span class="step-dot"></span>
                   <div class="step-content">
                     <span class="step-tag">Ensino Fundamental</span>
@@ -513,120 +504,242 @@
                   </div>
                 </div>
 
-                <div class="timeline-step active">
+                <!-- Step 3: Ensino Médio -->
+                <div class="timeline-step" data-step="3">
                   <span class="step-dot"></span>
                   <div class="step-content">
                     <span class="step-tag">Ensino Médio</span>
                     <p class="step-text">Alta performance e aprovação garantida.</p>
                   </div>
                 </div>
-
-                <div class="timeline-step">
-                  <span class="step-dot"></span>
-                  <div class="step-content">
-                    <span class="step-tag">Faculdade CCI</span>
-                    <p class="step-text">Liderança profissional e ensino superior.</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Structure Section -->
-      <section id="estrutura" class="structure-section scroll-reveal">
-        <div class="container text-center-header">
-          <h2 class="section-title-eyebrow">Infraestrutura Imersiva</h2>
-          <h3 class="section-main-title">Espaços Planejados para Conectar Raciocínio e Lazer</h3>
-          <p class="section-subtitle-max">
-            Ambientes amplos, modernos e equipados com tecnologia educacional que impulsiona o desejo natural de
-            aprender de cada criança e jovem.
-          </p>
+      <!-- ═══════════════════════════════════════════
+           APROVADOS TEASER — Resultados que falam por si
+           ═══════════════════════════════════════════ -->
+      <section class="home-aprov-teaser scroll-reveal">
+        <!-- Decorative floating particles -->
+        <div class="home-aprov-decor" aria-hidden="true">
+          <span class="aprov-confetti c1"></span>
+          <span class="aprov-confetti c2"></span>
+          <span class="aprov-confetti c3"></span>
+          <span class="aprov-confetti c4"></span>
+          <span class="aprov-confetti c5"></span>
+          <span class="aprov-confetti c6"></span>
+          <span class="hap-glow hg1"></span>
+          <span class="hap-glow hg2"></span>
         </div>
 
-        <div class="container grid-5 structure-gallery">
-          <div class="structure-card glass-card col-span-3">
-            <div class="image-overlay-text">
-              <span class="structure-tag">Lazer e Saúde</span>
-              <h4 class="structure-title">Complexo Aquático e Esportivo</h4>
-              <p class="structure-text">Piscinas aquecidas e quadras poliesportivas cobertas para o pleno
-                desenvolvimento motor dos alunos.</p>
+        <div class="container home-aprov-inner">
+          <!-- Header -->
+          <div class="home-aprov-header">
+            <div>
+              <h2 class="section-title-eyebrow" style="color: var(--color-primary);">Nossos Resultados</h2>
+              <h3 class="home-aprov-title">Aprovações que <span class="gradient-text-gold">provam</span> nossa excelência</h3>
+              <p class="home-aprov-subtitle">Alunos do CCI aprovados nas universidades mais concorridas do Brasil — ano após ano.</p>
             </div>
-            <img src="/structure.png" alt="Piscina Colégio CCI" class="img-responsive structure-img" />
-            <!-- Cut-out Corner with Plus Button (Referência Leonardo da Vinci) -->
-            <div class="corner-cutout">
-              <div class="corner-plus-btn" style="background-color: var(--color-faculdade);">
-                <i class="fa-solid fa-plus"></i>
+            <a href="/aprovados.html" class="btn btn-primary btn-glow home-aprov-cta-top">
+              <span>Ver Todos os Aprovados</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Stats Strip -->
+          <div class="home-aprov-stats">
+            <div class="home-aprov-stat">
+              <span class="home-aprov-num" data-target="22">0</span><span class="home-aprov-plus">+</span>
+              <span class="home-aprov-label">Aprovações em 2026</span>
+            </div>
+            <span class="home-aprov-divider"></span>
+            <div class="home-aprov-stat">
+              <span class="home-aprov-num" data-target="7">0</span>
+              <span class="home-aprov-label">Universidades Diferentes</span>
+            </div>
+            <span class="home-aprov-divider"></span>
+            <div class="home-aprov-stat">
+              <span class="home-aprov-num" data-target="14">0</span>
+              <span class="home-aprov-label">Aprovados UnB/PAS</span>
+            </div>
+            <span class="home-aprov-divider"></span>
+            <div class="home-aprov-stat">
+              <span class="home-aprov-num" data-target="4">0</span>
+              <span class="home-aprov-label">Anos Consecutivos no Topo</span>
+            </div>
+          </div>
+
+          <!-- Featured Cards (3 destaques) -->
+          <div class="home-aprov-cards">
+            <!-- Card 1 — Medicina UnB -->
+            <div class="home-aprov-card hac-featured">
+              <div class="hac-top">
+                <span class="hac-badge hac-badge-pas">PAS/UnB · 1ª Chamada</span>
+                <i class="fa-solid fa-trophy hac-trophy"></i>
+              </div>
+              <div class="hac-avatar" style="background: #10b981;">AL</div>
+              <div class="hac-info">
+                <h4 class="hac-name">Ana Luíza Sousa</h4>
+                <p class="hac-course">Medicina</p>
+                <p class="hac-uni"><i class="fa-solid fa-building-columns"></i> Universidade de Brasília</p>
+              </div>
+            </div>
+
+            <!-- Card 2 — Direito UnB -->
+            <div class="home-aprov-card">
+              <div class="hac-top">
+                <span class="hac-badge hac-badge-pas">PAS/UnB</span>
+                <i class="fa-solid fa-star hac-trophy" style="color: #f7b500;"></i>
+              </div>
+              <div class="hac-avatar" style="background: #6366f1;">GF</div>
+              <div class="hac-info">
+                <h4 class="hac-name">Gabriel Ferreira</h4>
+                <p class="hac-course">Direito</p>
+                <p class="hac-uni"><i class="fa-solid fa-building-columns"></i> Universidade de Brasília</p>
+              </div>
+            </div>
+
+            <!-- Card 3 — Direito USP -->
+            <div class="home-aprov-card">
+              <div class="hac-top">
+                <span class="hac-badge hac-badge-sisu">SISU / USP</span>
+                <i class="fa-solid fa-star hac-trophy" style="color: #818cf8;"></i>
+              </div>
+              <div class="hac-avatar" style="background: #e11d48;">FR</div>
+              <div class="hac-info">
+                <h4 class="hac-name">Fernanda Rocha</h4>
+                <p class="hac-course">Direito</p>
+                <p class="hac-uni"><i class="fa-solid fa-building-columns"></i> Universidade de São Paulo</p>
               </div>
             </div>
           </div>
 
-          <div class="structure-card glass-card col-span-2">
-            <div class="image-overlay-text">
-              <span class="structure-tag">Foco & Tecnologia</span>
-              <h4 class="structure-title">Laboratório de Ciências & Robótica</h4>
-              <p class="structure-text">Bancadas de última geração para experimentos científicos e criação de autômatos.
-              </p>
-            </div>
-            <img src="/methodology.png" alt="Laboratório Colégio CCI" class="img-responsive structure-img" />
-            <!-- Cut-out Corner with Plus Button (Referência Leonardo da Vinci) -->
-            <div class="corner-cutout">
-              <div class="corner-plus-btn" style="background-color: var(--color-medio);">
-                <i class="fa-solid fa-plus"></i>
-              </div>
-            </div>
+          <!-- Bottom CTA (mobile friendly) -->
+          <div class="home-aprov-cta-bottom">
+            <a href="/aprovados.html" class="btn btn-secondary btn-glow">
+              <span>Ver Lista Completa de Aprovados</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
-        </div>
-
-        <div class="container structure-features-grid">
-          <div class="feature-badge"><i class="fa-solid fa-wifi"></i> Salas Inteligentes</div>
-          <div class="feature-badge"><i class="fa-solid fa-book-open"></i> Biblioteca Expandida</div>
-          <div class="feature-badge"><i class="fa-solid fa-utensils"></i> Refeitório Monitorado</div>
-          <div class="feature-badge"><i class="fa-solid fa-tree"></i> Pátios Arborizados</div>
-          <div class="feature-badge"><i class="fa-solid fa-shield-heart"></i> Sistema de Monitoramento 24h</div>
         </div>
       </section>
 
-      <!-- Testimonials Section -->
-      <section class="testimonials-section scroll-reveal">
-        <div class="container testimonials-wrapper">
-          <div class="testimonial-header">
-            <h2 class="section-title-eyebrow">Depoimentos Reais</h2>
-            <h3 class="section-main-title text-white">O Orgulho de Fazer Parte da Nossa Família</h3>
+      <!-- Testimonials Section (Redesigned) -->
+      <section class="testimonials-section-new scroll-reveal">
+        <div class="container">
+          <div class="text-center-header">
+            <h2 class="section-title-eyebrow">Depoimentos</h2>
+            <h3 class="section-main-title">O Que as Famílias Dizem</h3>
+            <p class="section-subtitle-max">Histórias reais de quem confia o futuro dos seus filhos ao CCI há anos.</p>
           </div>
 
-          <div class="testimonial-slider-container">
-            <div class="glass-card testimonial-card">
-              <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
-              <p class="testimonial-quote">
-                "Escolher o CCI para os meus dois filhos foi a melhor decisão que já tomei. A paz de espírito de saber
-                que eles estão em um ambiente seguro, aprendendo robótica e desenvolvendo inteligência socioemocional, é
-                indescritível. O colégio realmente entrega segurança e futuro."
-              </p>
-              <div class="testimonial-author">
+          <div class="testimonials-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card-new">
+              <div class="testimonial-stars-row">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-text">Escolher o CCI para os meus dois filhos foi a melhor decisão que já tomei. A paz de espírito de saber que eles estão em um ambiente seguro, aprendendo robótica e desenvolvendo inteligência socioemocional, é indescritível.</p>
+              <div class="testimonial-author-row">
+                <div class="author-avatar-circle" style="--avatar-bg: #10b981;">CV</div>
                 <div class="author-details">
-                  <strong class="author-name">Cláudia Vasconcelos</strong>
-                  <span class="author-meta">Mãe do Pedro (6º ano) e Mariana (3º ano)</span>
+                  <strong>Cláudia Vasconcelos</strong>
+                  <span>Mãe do Pedro (6º ano) e Mariana (3º ano)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 — Featured -->
+            <div class="testimonial-card-new testimonial-featured">
+              <span class="testimonial-featured-badge"><i class="fa-solid fa-award"></i> Destaque</span>
+              <div class="testimonial-stars-row">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-text">Minha filha entrou na Educação Infantil e hoje está no Ensino Médio — sempre no CCI. O acompanhamento personalizado, a metodologia Mind Lab e o foco no PAS foram decisivos para ela ser aprovada na UnB com excelente nota.</p>
+              <div class="testimonial-author-row">
+                <div class="author-avatar-circle" style="--avatar-bg: #6366f1;">RS</div>
+                <div class="author-details">
+                  <strong>Rafael Sousa</strong>
+                  <span>Pai da Ana Luíza — aprovada na UnB/PAS</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card-new">
+              <div class="testimonial-stars-row">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-text">O que me conquistou no CCI foi a transparência com as famílias. Somos parceiros do processo educativo desde o início. O engajamento dos professores e a estrutura física são simplesmente excepcionais.</p>
+              <div class="testimonial-author-row">
+                <div class="author-avatar-circle" style="--avatar-bg: #f59e0b;">MO</div>
+                <div class="author-details">
+                  <strong>Mariana Oliveira</strong>
+                  <span>Mãe do Thiago (4º ano Fundamental)</span>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Dynamic School Statistics Counter Section -->
-          <div class="stats-counter-grid">
-            <div class="stat-counter-card">
-              <h4 class="stat-number" data-target="28">0</h4>
-              <p class="stat-label">Anos Formando Vencedores</p>
+        <!-- Stats Strip -->
+        <div class="stats-strip-bar">
+          <div class="container stats-strip-inner">
+            <div class="stat-strip-item">
+              <i class="fa-solid fa-school stat-strip-icon"></i>
+              <div class="stat-strip-data">
+                <div class="stat-strip-number-row">
+                  <span class="stat-number" data-target="28">0</span>
+                  <span class="stat-strip-suffix">+</span>
+                </div>
+                <p class="stat-strip-label">Anos de Tradição</p>
+              </div>
             </div>
-            <div class="stat-counter-card">
-              <h4 class="stat-number" data-target="2500">0</h4>
-              <p class="stat-label">Alunos Atendidos</p>
+            <div class="stat-strip-divider"></div>
+            <div class="stat-strip-item">
+              <i class="fa-solid fa-users stat-strip-icon"></i>
+              <div class="stat-strip-data">
+                <div class="stat-strip-number-row">
+                  <span class="stat-number" data-target="15">0</span>
+                  <span class="stat-strip-suffix">mil+</span>
+                </div>
+                <p class="stat-strip-label">Alunos Atendidos</p>
+              </div>
             </div>
-            <div class="stat-counter-card">
-              <h4 class="stat-number" data-target="95">0</h4>
-              <span class="stat-suffix">%</span>
-              <p class="stat-label">De Aprovação no PAS/UnB</p>
+            <div class="stat-strip-divider"></div>
+            <div class="stat-strip-item">
+              <i class="fa-solid fa-graduation-cap stat-strip-icon"></i>
+              <div class="stat-strip-data">
+                <div class="stat-strip-number-row">
+                  <span class="stat-number" data-target="2">0</span>
+                  <span class="stat-strip-suffix">mil+</span>
+                </div>
+                <p class="stat-strip-label">Alunos Aprovados</p>
+              </div>
+            </div>
+            <div class="stat-strip-divider"></div>
+            <div class="stat-strip-item">
+              <i class="fa-solid fa-star stat-strip-icon"></i>
+              <div class="stat-strip-data">
+                <div class="stat-strip-number-row">
+                  <span class="stat-number-static">4.9</span>
+                </div>
+                <p class="stat-strip-label">Avaliação Google</p>
+              </div>
             </div>
           </div>
         </div>
@@ -685,71 +798,11 @@
             </div>
           </article>
         </div>
-      </section>
-
-      <!-- Events Section -->
-      <section id="eventos" class="events-section scroll-reveal">
-        <div class="container grid-2">
-          <div class="events-text">
-            <h2 class="section-title-eyebrow">Próximos Eventos</h2>
-            <h3 class="section-main-title">Participe da vida ativa da nossa comunidade escolar</h3>
-            <p class="section-description">
-              Promovemos eventos artísticos, esportivos e culturais integrando alunos, equipe pedagógica e as famílias
-              em comemorações memoráveis.
-            </p>
-
-            <div class="app-integration-card glass-card">
-              <div class="app-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-              <div class="app-details">
-                <h4 class="app-title">Portal de Acesso CCI</h4>
-                <p class="app-text">Baixe o nosso App nas lojas para ter a agenda escolar completa na palma da mão.</p>
-                <div class="app-stores">
-                  <a href="https://play.google.com/store/apps/details?id=br.com.cosmosedu.cci.plataforma"
-                    class="store-link"><i class="fa-brands fa-google-play"></i> Google Play</a>
-                  <a href="https://apps.apple.com/br/app/cci-col%C3%A9gio-e-faculdade/id6740246700"
-                    class="store-link"><i class="fa-brands fa-apple"></i> App Store</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="events-list">
-            <!-- Event 1 -->
-            <div class="event-item glass-card">
-              <div class="event-date-box">
-                <span class="event-day">12</span>
-                <span class="event-month">JUN</span>
-              </div>
-              <div class="event-info">
-                <h4 class="event-name">Feira de Inovação & Tecnologia Maker</h4>
-                <p class="event-desc"><i class="fa-regular fa-clock"></i> 09:00 - 16:00 | Ginásio Esportivo CCI</p>
-              </div>
-            </div>
-
-            <!-- Event 2 -->
-            <div class="event-item glass-card">
-              <div class="event-date-box">
-                <span class="event-day">27</span>
-                <span class="event-month">JUN</span>
-              </div>
-              <div class="event-info">
-                <h4 class="event-name">Mostra Cultural e de Valores Humanos</h4>
-                <p class="event-desc"><i class="fa-regular fa-clock"></i> 14:00 - 19:00 | Teatro de Arena</p>
-              </div>
-            </div>
-
-            <!-- Event 3 -->
-            <div class="event-item glass-card">
-              <div class="event-date-box">
-                <span class="event-day">15</span>
-                <span class="event-month">AGO</span>
-              </div>
-              <div class="event-info">
-                <h4 class="event-name">Encontro de Famílias & Diálogos Emocionais</h4>
-                <p class="event-desc"><i class="fa-regular fa-clock"></i> 08:30 - 12:00 | Auditório Principal</p>
-              </div>
-            </div>
-          </div>
+        <div class="text-center-header" style="margin-top: 3.5rem; margin-bottom: 0;">
+          <a href="/portal-noticias.html" class="btn btn-secondary btn-glow">
+            <span>Ver Todas as Notíccias</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
       </section>
 
@@ -848,7 +901,7 @@
             <a href="#sobre">Quem Somos</a>
             <a href="#metodologia">Metodologia</a>
             <a href="#diferenciais">Diferenciais</a>
-            <a href="#estrutura">Infraestrutura</a>
+            <a href="/portal-noticias.html">Notíccias</a>
           </div>
         </div>
 
@@ -858,7 +911,6 @@
             <a href="https://www.plurall.net/">Portal Plurall</a>
             <a href="https://classroom.google.com/">Google Classroom</a>
             <a href="https://portalcci.com.br/">Intranet Grupo CCI</a>
-            <a href="#eventos">Agenda de Eventos</a>
           </div>
         </div>
 
